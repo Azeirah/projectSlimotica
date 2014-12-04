@@ -1,0 +1,3 @@
+[submodule "domotica/contiki"]
+	path = domotica/contiki
+	url = https://github.com/contiki-os/contiki.git
