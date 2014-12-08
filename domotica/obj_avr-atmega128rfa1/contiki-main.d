@@ -1,0 +1,116 @@
+obj_avr-atmega128rfa1/contiki-main.o: \
+ contiki/platform/avr-atmega128rfa1/./contiki-main.c \
+ contiki/core/dev/watchdog.h contiki/core/loader/symbols-def.h \
+ contiki/core/loader/symtab.h \
+ contiki/platform/avr-atmega128rfa1/./params.h \
+ contiki/core/lib/settings.h contiki/core/dev/eeprom.h \
+ contiki/core/sys/cc.h contiki/platform/avr-atmega128rfa1/contiki-conf.h \
+ contiki/cpu/avr/radio/rf230bb/rf230bb.h \
+ contiki/cpu/avr/radio/rf230bb/hal.h \
+ contiki/cpu/avr/radio/rf230bb/atmega128rfa1_registermap.h \
+ contiki/core/net/mac/frame802154.h contiki/core/net/rime/rimeaddr.h \
+ contiki/core/net/mac/framer-802154.h contiki/core/net/mac/framer.h \
+ contiki/core/net/sicslowpan.h contiki/core/net/uip.h \
+ contiki/core/net/uipopt.h contiki/core/net/tcpip.h \
+ contiki/core/contiki.h contiki/core/contiki-version.h \
+ contiki/core/contiki-default-conf.h contiki/core/sys/process.h \
+ contiki/core/sys/pt.h contiki/core/sys/lc.h contiki/core/sys/lc-switch.h \
+ contiki/core/sys/autostart.h contiki/core/sys/process.h \
+ contiki/core/sys/timer.h contiki/core/sys/clock.h \
+ contiki/core/sys/ctimer.h contiki/core/sys/etimer.h \
+ contiki/core/sys/timer.h contiki/core/sys/etimer.h \
+ contiki/core/sys/rtimer.h contiki/cpu/avr/rtimer-arch.h \
+ contiki/core/sys/pt.h contiki/core/sys/procinit.h \
+ contiki/core/sys/loader.h contiki/core/sys/clock.h \
+ contiki/core/sys/energest.h contiki/core/sys/rtimer.h \
+ contiki/core/net/mac/mac.h contiki/core/dev/radio.h \
+ contiki/core/contiki-net.h contiki/core/contiki.h \
+ contiki/core/net/tcpip.h contiki/core/net/uip.h \
+ contiki/core/net/uip-fw.h contiki/core/net/uip-fw-drv.h \
+ contiki/core/net/uip-fw.h contiki/core/net/uip_arp.h \
+ contiki/core/net/uiplib.h contiki/core/net/uip-udp-packet.h \
+ contiki/core/net/simple-udp.h contiki/core/net/resolv.h \
+ contiki/core/net/uip.h contiki/core/net/psock.h \
+ contiki/core/contiki-lib.h contiki/core/lib/list.h \
+ contiki/core/lib/memb.h contiki/core/lib/mmem.h \
+ contiki/core/lib/random.h contiki/core/net/rime.h \
+ contiki/core/net/rime/announcement.h contiki/core/net/rime/collect.h \
+ contiki/core/net/rime/runicast.h contiki/core/net/rime/stunicast.h \
+ contiki/core/sys/ctimer.h contiki/core/net/rime/unicast.h \
+ contiki/core/net/rime/broadcast.h contiki/core/net/rime/abc.h \
+ contiki/core/net/packetbuf.h contiki/core/net/rime/channel.h \
+ contiki/core/net/rime/chameleon.h contiki/core/net/queuebuf.h \
+ contiki/core/net/rime/neighbor-discovery.h \
+ contiki/core/net/rime/collect-neighbor.h \
+ contiki/core/net/rime/collect-link-estimate.h contiki/core/lib/list.h \
+ contiki/core/net/packetqueue.h contiki/core/lib/memb.h \
+ contiki/core/net/rime/ipolite.h contiki/core/net/rime/mesh.h \
+ contiki/core/net/rime/multihop.h contiki/core/net/rime/route-discovery.h \
+ contiki/core/net/rime/netflood.h \
+ contiki/core/net/rime/polite-announcement.h \
+ contiki/core/net/rime/polite.h contiki/core/net/rime/rimestats.h \
+ contiki/core/net/rime/rmh.h contiki/core/net/rime/route.h \
+ contiki/core/net/rime/rucb.h contiki/core/net/rime/timesynch.h \
+ contiki/core/net/rime/trickle.h contiki/core/net/netstack.h \
+ contiki/core/net/mac/rdc.h contiki/cpu/avr/dev/rs232.h \
+ contiki/cpu/avr/dev/rs232_atmega128rfa1.h contiki/core/dev/serial-line.h \
+ contiki/core/dev/slip.h contiki/core/net/rime.h \
+ contiki/core/lib/print-stats.h
+\ :
+ contiki/platform/avr-atmega128rfa1/./contiki-main.c \ :
+ contiki/core/dev/watchdog.h contiki/core/loader/symbols-def.h \ :
+ contiki/core/loader/symtab.h \ :
+ contiki/platform/avr-atmega128rfa1/./params.h \ :
+ contiki/core/lib/settings.h contiki/core/dev/eeprom.h \ :
+ contiki/core/sys/cc.h contiki/platform/avr-atmega128rfa1/contiki-conf.h \ :
+ contiki/cpu/avr/radio/rf230bb/rf230bb.h \ :
+ contiki/cpu/avr/radio/rf230bb/hal.h \ :
+ contiki/cpu/avr/radio/rf230bb/atmega128rfa1_registermap.h \ :
+ contiki/core/net/mac/frame802154.h contiki/core/net/rime/rimeaddr.h \ :
+ contiki/core/net/mac/framer-802154.h contiki/core/net/mac/framer.h \ :
+ contiki/core/net/sicslowpan.h contiki/core/net/uip.h \ :
+ contiki/core/net/uipopt.h contiki/core/net/tcpip.h \ :
+ contiki/core/contiki.h contiki/core/contiki-version.h \ :
+ contiki/core/contiki-default-conf.h contiki/core/sys/process.h \ :
+ contiki/core/sys/pt.h contiki/core/sys/lc.h contiki/core/sys/lc-switch.h \ :
+ contiki/core/sys/autostart.h contiki/core/sys/process.h \ :
+ contiki/core/sys/timer.h contiki/core/sys/clock.h \ :
+ contiki/core/sys/ctimer.h contiki/core/sys/etimer.h \ :
+ contiki/core/sys/timer.h contiki/core/sys/etimer.h \ :
+ contiki/core/sys/rtimer.h contiki/cpu/avr/rtimer-arch.h \ :
+ contiki/core/sys/pt.h contiki/core/sys/procinit.h \ :
+ contiki/core/sys/loader.h contiki/core/sys/clock.h \ :
+ contiki/core/sys/energest.h contiki/core/sys/rtimer.h \ :
+ contiki/core/net/mac/mac.h contiki/core/dev/radio.h \ :
+ contiki/core/contiki-net.h contiki/core/contiki.h \ :
+ contiki/core/net/tcpip.h contiki/core/net/uip.h \ :
+ contiki/core/net/uip-fw.h contiki/core/net/uip-fw-drv.h \ :
+ contiki/core/net/uip-fw.h contiki/core/net/uip_arp.h \ :
+ contiki/core/net/uiplib.h contiki/core/net/uip-udp-packet.h \ :
+ contiki/core/net/simple-udp.h contiki/core/net/resolv.h \ :
+ contiki/core/net/uip.h contiki/core/net/psock.h \ :
+ contiki/core/contiki-lib.h contiki/core/lib/list.h \ :
+ contiki/core/lib/memb.h contiki/core/lib/mmem.h \ :
+ contiki/core/lib/random.h contiki/core/net/rime.h \ :
+ contiki/core/net/rime/announcement.h contiki/core/net/rime/collect.h \ :
+ contiki/core/net/rime/runicast.h contiki/core/net/rime/stunicast.h \ :
+ contiki/core/sys/ctimer.h contiki/core/net/rime/unicast.h \ :
+ contiki/core/net/rime/broadcast.h contiki/core/net/rime/abc.h \ :
+ contiki/core/net/packetbuf.h contiki/core/net/rime/channel.h \ :
+ contiki/core/net/rime/chameleon.h contiki/core/net/queuebuf.h \ :
+ contiki/core/net/rime/neighbor-discovery.h \ :
+ contiki/core/net/rime/collect-neighbor.h \ :
+ contiki/core/net/rime/collect-link-estimate.h contiki/core/lib/list.h \ :
+ contiki/core/net/packetqueue.h contiki/core/lib/memb.h \ :
+ contiki/core/net/rime/ipolite.h contiki/core/net/rime/mesh.h \ :
+ contiki/core/net/rime/multihop.h contiki/core/net/rime/route-discovery.h \ :
+ contiki/core/net/rime/netflood.h \ :
+ contiki/core/net/rime/polite-announcement.h \ :
+ contiki/core/net/rime/polite.h contiki/core/net/rime/rimestats.h \ :
+ contiki/core/net/rime/rmh.h contiki/core/net/rime/route.h \ :
+ contiki/core/net/rime/rucb.h contiki/core/net/rime/timesynch.h \ :
+ contiki/core/net/rime/trickle.h contiki/core/net/netstack.h \ :
+ contiki/core/net/mac/rdc.h contiki/cpu/avr/dev/rs232.h \ :
+ contiki/cpu/avr/dev/rs232_atmega128rfa1.h contiki/core/dev/serial-line.h \ :
+ contiki/core/dev/slip.h contiki/core/net/rime.h \ :
+ contiki/core/lib/print-stats.h :

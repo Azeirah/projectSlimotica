@@ -1,3 +1,7 @@
+[submodule "domotica/763590695ff6ee5a281895f125984dc4bf38efdf"]
+	path = domotica/763590695ff6ee5a281895f125984dc4bf38efdf
+	url = https://github.com/contiki-os/contiki.git
+	branch = master
 [submodule "domotica/contiki"]
 	path = domotica/contiki
-	url = https://github.com/contiki-os/contiki.git
+	url = https://github.com/contiki-os/contiki
