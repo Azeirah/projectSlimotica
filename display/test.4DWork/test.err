@@ -1,0 +1,10 @@
+Error: 'parser' not found (line 8 file:test.4dg)
+Error: context error for unknown 'parser' (line 8 file:test.4dg)
+Error: left side of expression is not a pointer or variable (missing LVAL) (line 8 file:test.4dg)
+Error: expected a semicolon following previous expression (line 8 file:test.4dg)
+Error: syntax error in expression ? ':=' (line 8 file:test.4dg)
+Error: expected a semicolon following previous expression (line 8 file:test.4dg)
+Error: 'forever' without matching 'repeat' (line 11 file:test.4dg)
+7 errors
+0 warnings
+0 notices

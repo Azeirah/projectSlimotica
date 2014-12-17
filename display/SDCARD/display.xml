@@ -1,0 +1,53 @@
+<display mode="180">
+   <resources >
+      <resource name="message" type="string" size="100" default="No Mesage"/>
+      <resource name="title" type="string" size="100" default="No Title"/>
+      <resource name="time" type="string" size="5" default="00:00"/>
+      <resource name="length" type="string" size="5" default="00:00"/>
+      <resource name="progress" type="number_4" default="50"/>
+      <resource name="state" type="string" size="10" default="STOP"/>
+   </resources>
+   <events >
+      <event id="1" send1="play"/>
+      <event id="2" send1="pause"/>
+      <event id="3" send1="stop"/>
+      <event id="4" send1="next"/>
+      <event id="5" send1="prev"/>
+      <event id="6" send1="ok"/>
+   </events>
+   <screens startscreen="3">
+      <screen id="1" color="F10">
+         <element type="text" x="0" y="0" width="239" height="67" text="ERORR" fontsize="36" center="true"/>
+         <element type="text" x="0" y="88" width="136" height="31" text="Message:" fontsize="16"/>
+         <element type="text" x="0" y="134" width="239" height="118" text="RES:message" fontsize="12"/>
+      </screen>
+      <screen id="2" color="09F">
+         <element type="text" x="0" y="0" width="239" height="67" text="WARNING" fontsize="36" center="true"/>
+         <element type="text" x="0" y="88" width="136" height="31" text="Message:" fontsize="16"/>
+         <element type="text" x="0" y="130" width="239" height="118" text="RES:message" fontsize="12"/>
+         <element type="button" x="34" y="261" width="175" height="47" fontsize="24" text="OK" textcolor="000" backcolor="AAA" bordercolor="000" clicked="6"/>
+      </screen>
+      <screen id="3" color="FFF">
+         <element type="text" x="0" y="0" width="239" height="91" multiline="true" text="Please wait ..." fontsize="36" center="true"/>
+         <element type="progress" x="0" y="94" width="239" height="37" barcolor="3B0" backcolor="FFF" bordercolor="000"/>
+         <element type="image" x="0" y="143" width="239" height="176" image1="0.img" show="1"/>
+      </screen>
+      <screen id="4" image="1.img">
+         <element type="text" x="0" y="7" width="104" height="31" text="Title:" fontsize="12" textcolor="FFF"/>
+         <element type="text" x="28" y="36" width="210" height="26" backcolor="000" scroll="true" autoscroll="true" text="RES:title" fontsize="12" textcolor="FFF"/>
+         <element type="text" x="0" y="68" width="53" height="31" text="Time:" fontsize="12" textcolor="FFF"/>
+         <element type="text" x="79" y="71" width="47" height="26" backcolor="000" text="RES:time" fontsize="12" center="true" textcolor="FFF"/>
+         <element type="text" x="142" y="72" width="15" height="26" backcolor="000" text="/" fontsize="12" center="true" textcolor="FFF"/>
+         <element type="text" x="174" y="71" width="47" height="26" backcolor="000" text="RES:length" fontsize="12" center="true" textcolor="FFF"/>
+         <element type="text" x="0" y="98" width="84" height="31" text="Progress:" fontsize="12" textcolor="FFF"/>
+         <element type="progress" x="29" y="132" width="209" height="29" barcolor="281" backcolor="000" bordercolor="FFF" value="RES:progress"/>
+         <element type="text" x="0" y="174" width="84" height="31" text="State:" fontsize="12" textcolor="FFF"/>
+         <element type="text" x="72" y="177" width="99" height="26" backcolor="000" text="RES:state" fontsize="12" center="true" textcolor="FFF"/>
+         <element type="button" x="0" y="218" width="72" height="37" fontsize="12" text="PLAY" textcolor="000" backcolor="AAA" bordercolor="000" clicked="1"/>
+         <element type="button" x="82" y="218" width="72" height="37" fontsize="12" text="PAUSE" textcolor="000" backcolor="AAA" bordercolor="000" clicked="2"/>
+         <element type="button" x="164" y="219" width="72" height="37" fontsize="12" text="STOP" textcolor="000" backcolor="AAA" bordercolor="000" clicked="3"/>
+         <element type="button" x="0" y="272" width="72" height="37" fontsize="12" text="PREV" textcolor="000" backcolor="AAA" bordercolor="000" clicked="5"/>
+         <element type="button" x="164" y="270" width="72" height="37" fontsize="12" text="NEXT" textcolor="000" backcolor="AAA" bordercolor="000" clicked="4"/>
+      </screen>
+   </screens>
+</display>

@@ -110,15 +110,36 @@
       </AvrGcc>
     </ToolchainSettings>
     <UsesExternalMakeFile>True</UsesExternalMakeFile>
-    <OutputDirectory>C:\Users\MB\Documents\Atmel Studio\6.2\domotica\domotica</OutputDirectory>
+    <OutputDirectory>
+    </OutputDirectory>
     <BuildTarget> TARGET=avr-atmega128rfa1</BuildTarget>
     <CleanTarget>clean</CleanTarget>
-    <ExternalMakeFilePath>C:\Users\MB\Documents\Atmel Studio\6.2\domotica\domotica\Makefile</ExternalMakeFilePath>
+    <ExternalMakeFilePath>Makefile</ExternalMakeFilePath>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="domotica.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="SPI.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="contiki-avr-atmega128rfa1.a">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="contiki-avr-atmega128rfa1.map">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="domotica.avr-atmega128rfa1">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Makefile">
+      <SubType>compile</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
