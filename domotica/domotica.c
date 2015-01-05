@@ -11,7 +11,7 @@
 
 #include <avr/io.h>	//For pin defines
 #include <util/delay.h>	//For delay functions
-
+#include <stdio.h>
 void blinkingLeds(void);
 
 
@@ -35,6 +35,8 @@ PROCESS_THREAD(hello_world_process, ev, data)
 void blinkingLeds(void) {
 	
 	int x;
+	
+	printf("Hello contiki world");
 	for(x = 0 ; x < 10000 ; x++) {
 		PORTE |= (1 << DDE6);
 		_delay_ms(500);
