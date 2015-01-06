@@ -13,8 +13,9 @@
  * Data to transmit can be set by using setDatBuffer(DATA);
  * Data Recieved at a index of the buffer can be read using getDataBufferAtIndex(a_int); it returns -1 if number is out of bounds.
  */ 
-	
-#include <interrupt.h>
+
+#include "SPI.h"
+#include <avr/interrupt.h>
 #include <string.h>
 
 char sendMode = 0; // 0 = Receiving || 1 = Sending
@@ -82,7 +83,7 @@ uint8_t getRecievedDataSPI(void) {
 void setDataToSendSPI(uint8_t dataOut) {
 	if (dataOut == '\0') { //May or may not need to be changed
 		sendMode = 0;
-		dataBuffer = 0;
+		strcpy(dataBuffer, "");
 		dataBufferCounter = 0;
 		dataBufferLimit = BUFFER_SIZE;
 	}
@@ -98,7 +99,7 @@ void nextData(void) {
 		spiDATA = (uint8_t) dataBuffer[dataBufferCounter];
 	}
 	if (!sendMode) {
-		if (dataBuffer < dataBufferLimit) dataBufferCounter++;
+		if (dataBufferCounter < dataBufferLimit) dataBufferCounter++;
 		dataBuffer[dataBufferCounter] = (char) spiDATA;
 	}
 }
@@ -109,13 +110,13 @@ void nextData(void) {
 */
 void setDataBuffer(char data[]) {
 	sendMode = 1;
-	dataBuffer = data;
+	strcpy(dataBuffer, data);
 	dataBufferLimit = strlen(data);
 	dataBufferCounter = 0;
 }
 
 char getDataBufferAtIndex(char a) {
-	if(a <= databufferLimit) return dataBuffer[a];
+	if(a <= dataBufferLimit) return dataBuffer[a];
 	else return -1;
 }
 

@@ -8,6 +8,7 @@
 #define F_CPU 1000000UL	//For delay Function
 #include "contiki.h"	//Contiki
 //#include "I2C.h"
+#include "source/SPI.h"
 
 #include <avr/io.h>	//For pin defines
 #include <util/delay.h>	//For delay functions
@@ -24,11 +25,7 @@ AUTOSTART_PROCESSES(&hello_world_process);
 PROCESS_THREAD(hello_world_process, ev, data)
 {
 	PROCESS_BEGIN();
-
-	DDRE |= (1 << DDE6);
-	
-	blinkingLeds();
-
+	disableSPI();
 	PROCESS_END();
 }
 

@@ -4,8 +4,7 @@
  * Created: 15-12-2014 14:09:01
  *  Author: Jasper van Meer
  */ 
-#ifndef SPI_H_
-#define SPI_H_
+
 /* Explanation:
  * SPCR = SPI Control Register
  * 8765 4321 bit
@@ -33,17 +32,14 @@
  * SPDR = SPI Data register
  */
 
-//Functions
-char initSPI(char clockRate, EDGE_REACT, SPI_MODE, SIGNIFICANT_BIT_FIRST, SPI_ENABLE, SPI_INTERRUPT_ENABLE);
-void disableSPI(void); //Disable SPI
+#include <stdint.h> //Include for uint8_t
 
-uint8_t getRecievedDataSPI(void); //Return contents of SPDR
-void setDataToSendSPI(uint8_t dataOut); //Set contents of SPDR with dataOut
-
-void nextData(void); //Set next data databuffer > spiDATA || databuffer < spiDATA
-
-void setDataBuffer(char data[]); //Set the databuffer to send via SPI
-char getDataBufferAtIndex(char a); //Get Character from databuffer at index a
+//Defines for ease of use of parameters of Function: initSPI();
+#define EDGE_REACT				char edgeReact
+#define SPI_MODE				char spiMasterEnable
+#define SIGNIFICANT_BIT_FIRST	char dataOrder
+#define SPI_ENABLE				char spiEnable
+#define SPI_INTERRUPT_ENABLE	char spiInterruptEnable
 
 #define BUFFER_SIZE 128
 
@@ -63,11 +59,14 @@ char getDataBufferAtIndex(char a); //Get Character from databuffer at index a
 #define LSB_FIRST		1
 #define MSB_FIRST		0
 
-//Defines for ease of use of parameters of Function: initSPI();
-#define EDGE_REACT				char edgeReact
-#define SPI_MODE				char spiMasterEnable
-#define SIGNIFICANT_BIT_FIRST	char dataOrder
-#define SPI_ENABLE				char spiEnable
-#define SPI_INTERRUPT_ENABLE	char spiInterruptEnable
+//Functions
+char initSPI(char clockRate, EDGE_REACT, SPI_MODE, SIGNIFICANT_BIT_FIRST, SPI_ENABLE, SPI_INTERRUPT_ENABLE);
+void disableSPI(void); //Disable SPI
 
-#endif /* SPI_H_ */
+uint8_t getRecievedDataSPI(void); //Return contents of SPDR
+void setDataToSendSPI(uint8_t dataOut); //Set contents of SPDR with dataOut
+
+void nextData(void); //Set next data databuffer > spiDATA || databuffer < spiDATA
+
+void setDataBuffer(char data[]); //Set the databuffer to send via SPI
+char getDataBufferAtIndex(char a); //Get Character from databuffer at index a

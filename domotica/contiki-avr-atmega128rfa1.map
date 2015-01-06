@@ -94,6 +94,10 @@ c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-t
                               contiki-avr-atmega128rfa1.a(rf230bb.o) (memcpy)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
                               contiki-avr-atmega128rfa1.a(chameleon-bitop) (memset)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strcpy.o)
+                              C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o (strcpy)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strlen.o)
+                              C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o (strlen)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
                               contiki-avr-atmega128rfa1.a(rs232.o) (__iob)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf.o)
@@ -169,6 +173,7 @@ uip_appdata         0x2               contiki-avr-atmega128rfa1.a(uip.o)
 uip_conn            0x2               contiki-avr-atmega128rfa1.a(uip.o)
 rxframe_tail        0x1               contiki-avr-atmega128rfa1.a(rf230bb.o)
 tcpip_event         0x1               contiki-avr-atmega128rfa1.a(tcpip.o)
+dataBuffer          0x80              C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o
 uip_conns           0x80              contiki-avr-atmega128rfa1.a(uip.o)
 rxframe_head        0x1               contiki-avr-atmega128rfa1.a(rf230bb.o)
 rxframe             0x186             contiki-avr-atmega128rfa1.a(rf230bb.o)
@@ -197,6 +202,8 @@ Discarded input sections
  .text          0x00000000        0x0 domotica.co
  .data          0x00000000        0x0 domotica.co
  .bss           0x00000000        0x0 domotica.co
+ .text.blinkingLeds
+                0x00000000       0x44 domotica.co
  .text          0x00000000        0x0 contiki-avr-atmega128rfa1.a(contiki-main.o)
  .data          0x00000000        0x0 contiki-avr-atmega128rfa1.a(contiki-main.o)
  .bss           0x00000000        0x0 contiki-avr-atmega128rfa1.a(contiki-main.o)
@@ -506,6 +513,7 @@ Discarded input sections
                 0x00000000       0x14 contiki-avr-atmega128rfa1.a(timer.o)
  .text.timer_remaining
                 0x00000000       0x24 contiki-avr-atmega128rfa1.a(timer.o)
+ .data          0x00000000        0x0 C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
@@ -624,12 +632,21 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strcpy.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strlen.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strlen.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strlen.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf.o)
+ .text.avr-libc
+                0x00000000       0x24 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf.o)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf_p.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf_p.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf_p.o)
@@ -756,6 +773,7 @@ LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-
 Address of section .bootloader set to 0x1f800
 LOAD domotica.co
 LOAD contiki-avr-atmega128rfa1.a
+LOAD C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o
 START GROUP
 LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a
 LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a
@@ -852,7 +870,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x520c
+.text           0x00000000     0x5536
  *(.vectors)
  .vectors       0x00000000      0x120 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
                 0x00000000                __vector_default
@@ -952,7 +970,6 @@ END GROUP
                 0x000002ee                __vector_1
                 0x000002ee                __vector_71
                 0x000002ee                __vector_34
-                0x000002ee                __vector_24
                 0x000002ee                __vector_12
                 0x000002ee                __vector_55
                 0x000002ee                __vector_69
@@ -1004,616 +1021,625 @@ END GROUP
                 0x000002ee                __vector_20
                 0x000002ee                __vector_42
                 0x000002ee                __vector_65
-                0x000002f2                . = ALIGN (0x2)
+ .text          0x000002f2      0x372 C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o
+                0x000002f2                initSPI
+                0x00000494                disableSPI
+                0x000004aa                getRecievedDataSPI
+                0x000004c0                setDataToSendSPI
+                0x000004f8                nextData
+                0x0000056e                setDataBuffer
+                0x000005aa                getDataBufferAtIndex
+                0x000005dc                __vector_24
+                0x00000664                . = ALIGN (0x2)
  *(.text.*)
- .text.blinkingLeds
-                0x000002f2       0x44 domotica.co
-                0x000002f2                blinkingLeds
  .text.process_thread_hello_world_process
-                0x00000336       0x20 domotica.co
+                0x00000664       0x20 domotica.co
  .text.rng_get_uint8
-                0x00000356       0x28 contiki-avr-atmega128rfa1.a(contiki-main.o)
-                0x00000356                rng_get_uint8
+                0x00000684       0x28 contiki-avr-atmega128rfa1.a(contiki-main.o)
+                0x00000684                rng_get_uint8
  .text.initialize
-                0x0000037e      0x204 contiki-avr-atmega128rfa1.a(contiki-main.o)
-                0x0000037e                initialize
+                0x000006ac      0x204 contiki-avr-atmega128rfa1.a(contiki-main.o)
+                0x000006ac                initialize
  .text.startup.main
-                0x00000582       0xca contiki-avr-atmega128rfa1.a(contiki-main.o)
-                0x00000582                main
+                0x000008b0       0xca contiki-avr-atmega128rfa1.a(contiki-main.o)
+                0x000008b0                main
  .text.params_get_channel
-                0x0000064c      0x10c contiki-avr-atmega128rfa1.a(params.o)
-                0x0000064c                params_get_channel
+                0x0000097a      0x10c contiki-avr-atmega128rfa1.a(params.o)
+                0x0000097a                params_get_channel
  .text.params_get_eui64
-                0x00000758       0x14 contiki-avr-atmega128rfa1.a(params.o)
-                0x00000758                params_get_eui64
+                0x00000a86       0x14 contiki-avr-atmega128rfa1.a(params.o)
+                0x00000a86                params_get_eui64
  .text.params_get_panid
-                0x0000076c        0x8 contiki-avr-atmega128rfa1.a(params.o)
-                0x0000076c                params_get_panid
+                0x00000a9a        0x8 contiki-avr-atmega128rfa1.a(params.o)
+                0x00000a9a                params_get_panid
  .text.params_get_panaddr
-                0x00000774        0x8 contiki-avr-atmega128rfa1.a(params.o)
-                0x00000774                params_get_panaddr
+                0x00000aa2        0x8 contiki-avr-atmega128rfa1.a(params.o)
+                0x00000aa2                params_get_panaddr
  .text.params_get_txpower
-                0x0000077c        0x8 contiki-avr-atmega128rfa1.a(params.o)
-                0x0000077c                params_get_txpower
+                0x00000aaa        0x8 contiki-avr-atmega128rfa1.a(params.o)
+                0x00000aaa                params_get_txpower
  .text.clock_init
-                0x00000784       0x20 contiki-avr-atmega128rfa1.a(clock.o)
-                0x00000784                clock_init
+                0x00000ab2       0x20 contiki-avr-atmega128rfa1.a(clock.o)
+                0x00000ab2                clock_init
  .text.clock_time
-                0x000007a4       0x18 contiki-avr-atmega128rfa1.a(clock.o)
-                0x000007a4                clock_time
+                0x00000ad2       0x18 contiki-avr-atmega128rfa1.a(clock.o)
+                0x00000ad2                clock_time
  .text.clock_seconds
-                0x000007bc       0x34 contiki-avr-atmega128rfa1.a(clock.o)
-                0x000007bc                clock_seconds
+                0x00000aea       0x34 contiki-avr-atmega128rfa1.a(clock.o)
+                0x00000aea                clock_seconds
  .text.__vector_21
-                0x000007f0       0xe2 contiki-avr-atmega128rfa1.a(clock.o)
-                0x000007f0                __vector_21
+                0x00000b1e       0xe2 contiki-avr-atmega128rfa1.a(clock.o)
+                0x00000b1e                __vector_21
  .text.__vector_25
-                0x000008d2       0x5e contiki-avr-atmega128rfa1.a(rs232.o)
-                0x000008d2                __vector_25
+                0x00000c00       0x5e contiki-avr-atmega128rfa1.a(rs232.o)
+                0x00000c00                __vector_25
  .text.__vector_36
-                0x00000930       0x5e contiki-avr-atmega128rfa1.a(rs232.o)
-                0x00000930                __vector_36
+                0x00000c5e       0x5e contiki-avr-atmega128rfa1.a(rs232.o)
+                0x00000c5e                __vector_36
  .text.rs232_init
-                0x0000098e       0x40 contiki-avr-atmega128rfa1.a(rs232.o)
-                0x0000098e                rs232_init
+                0x00000cbc       0x40 contiki-avr-atmega128rfa1.a(rs232.o)
+                0x00000cbc                rs232_init
  .text.rs232_send
-                0x000009ce       0x24 contiki-avr-atmega128rfa1.a(rs232.o)
-                0x000009ce                rs232_send
+                0x00000cfc       0x24 contiki-avr-atmega128rfa1.a(rs232.o)
+                0x00000cfc                rs232_send
  .text.rs232_stdout_putchar
-                0x000009f2       0x2a contiki-avr-atmega128rfa1.a(rs232.o)
-                0x000009f2                rs232_stdout_putchar
+                0x00000d20       0x2a contiki-avr-atmega128rfa1.a(rs232.o)
+                0x00000d20                rs232_stdout_putchar
  .text.rs232_redirect_stdout
-                0x00000a1c       0x12 contiki-avr-atmega128rfa1.a(rs232.o)
-                0x00000a1c                rs232_redirect_stdout
+                0x00000d4a       0x12 contiki-avr-atmega128rfa1.a(rs232.o)
+                0x00000d4a                rs232_redirect_stdout
  .text.watchdog_init
-                0x00000a2e       0x18 contiki-avr-atmega128rfa1.a(watchdog.o)
-                0x00000a2e                watchdog_init
+                0x00000d5c       0x18 contiki-avr-atmega128rfa1.a(watchdog.o)
+                0x00000d5c                watchdog_init
  .text.watchdog_start
-                0x00000a46       0x18 contiki-avr-atmega128rfa1.a(watchdog.o)
-                0x00000a46                watchdog_start
+                0x00000d74       0x18 contiki-avr-atmega128rfa1.a(watchdog.o)
+                0x00000d74                watchdog_start
  .text.watchdog_periodic
-                0x00000a5e        0x4 contiki-avr-atmega128rfa1.a(watchdog.o)
-                0x00000a5e                watchdog_periodic
+                0x00000d8c        0x4 contiki-avr-atmega128rfa1.a(watchdog.o)
+                0x00000d8c                watchdog_periodic
  .text.rf230_pending_packet
-                0x00000a62        0x8 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000d90        0x8 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.radio_reset_state_machine
-                0x00000a6a       0x32 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000d98       0x32 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.set_txpower
-                0x00000a9c       0x1e contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000dca       0x1e contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_isidle
-                0x00000aba       0x2c contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000de8       0x2c contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_waitidle
-                0x00000ae6       0x12 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000e14       0x12 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_receiving_packet
-                0x00000af8       0x2a contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000e26       0x2a contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.radio_off
-                0x00000b22      0x124 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000e50      0x124 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_off
-                0x00000c46       0x16 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000f74       0x16 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_prepare
-                0x00000c5c       0x32 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000f8a       0x32 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.radio_get_trx_state
-                0x00000c8e        0xc contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x00000c8e                radio_get_trx_state
+                0x00000fbc        0xc contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000fbc                radio_get_trx_state
  .text.radio_set_trx_state
-                0x00000c9a       0xbc contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00000fc8       0xbc contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.radio_on
-                0x00000d56       0x6a contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00001084       0x6a contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_on
-                0x00000dc0       0x12 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x000010ee       0x12 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_cca
-                0x00000dd2      0x128 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00001100      0x128 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_warm_reset
-                0x00000efa       0x3e contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x00000efa                rf230_warm_reset
+                0x00001228       0x3e contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00001228                rf230_warm_reset
  .text.rf230_init
-                0x00000f38       0x76 contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x00000f38                rf230_init
+                0x00001266       0x76 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00001266                rf230_init
  .text.rf230_get_channel
-                0x00000fae        0x6 contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x00000fae                rf230_get_channel
+                0x000012dc        0x6 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x000012dc                rf230_get_channel
  .text.rf230_set_channel
-                0x00000fb4       0x2a contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x00000fb4                rf230_set_channel
+                0x000012e2       0x2a contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x000012e2                rf230_set_channel
  .text.rf230_set_pan_addr
-                0x00000fde       0x48 contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x00000fde                rf230_set_pan_addr
+                0x0000130c       0x48 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x0000130c                rf230_set_pan_addr
  .text.rf230_interrupt
-                0x00001026       0x26 contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x00001026                rf230_interrupt
+                0x00001354       0x26 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00001354                rf230_interrupt
  .text.rf230_read
-                0x0000104c       0xce contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x0000137a       0xce contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.process_thread_rf230_process
-                0x0000111a       0x8a contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00001448       0x8a contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_set_txpower
-                0x000011a4        0x4 contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x000011a4                rf230_set_txpower
+                0x000014d2        0x4 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x000014d2                rf230_set_txpower
  .text.rf230_get_txpower
-                0x000011a8       0x18 contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x000011a8                rf230_get_txpower
+                0x000014d6       0x18 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x000014d6                rf230_get_txpower
  .text.rf230_transmit
-                0x000011c0      0x260 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x000014ee      0x260 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.rf230_send
-                0x00001420       0x32 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x0000174e       0x32 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .text.hal_init
-                0x00001452        0x2 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x00001452                hal_init
+                0x00001780        0x2 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x00001780                hal_init
  .text.hal_subregister_read
-                0x00001454       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x00001454                hal_subregister_read
+                0x00001782       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x00001782                hal_subregister_read
  .text.hal_subregister_write
-                0x00001468       0x36 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x00001468                hal_subregister_write
+                0x00001796       0x36 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x00001796                hal_subregister_write
  .text.hal_frame_read
-                0x0000149e       0x54 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x0000149e                hal_frame_read
+                0x000017cc       0x54 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x000017cc                hal_frame_read
  .text.hal_frame_write
-                0x000014f2       0x22 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x000014f2                hal_frame_write
+                0x00001820       0x22 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x00001820                hal_frame_write
  .text.__vector_60
-                0x00001514       0x80 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x00001514                __vector_60
+                0x00001842       0x80 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x00001842                __vector_60
  .text.__vector_59
-                0x00001594       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x00001594                __vector_59
+                0x000018c2       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x000018c2                __vector_59
  .text.__vector_57
-                0x000015a8       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x000015a8                __vector_57
+                0x000018d6       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x000018d6                __vector_57
  .text.__vector_58
-                0x000015bc       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x000015bc                __vector_58
+                0x000018ea       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x000018ea                __vector_58
  .text.__vector_64
-                0x000015d0       0x18 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x000015d0                __vector_64
+                0x000018fe       0x18 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x000018fe                __vector_64
  .text.__vector_63
-                0x000015e8       0x18 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x000015e8                __vector_63
+                0x00001916       0x18 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x00001916                __vector_63
  .text.__vector_62
-                0x00001600       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x00001600                __vector_62
+                0x0000192e       0x14 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x0000192e                __vector_62
  .text.__vector_61
-                0x00001614       0x18 contiki-avr-atmega128rfa1.a(halbb.o)
-                0x00001614                __vector_61
+                0x00001942       0x18 contiki-avr-atmega128rfa1.a(halbb.o)
+                0x00001942                __vector_61
  .text.rimeaddr_copy
-                0x0000162c        0xe contiki-avr-atmega128rfa1.a(rimeaddr.o)
-                0x0000162c                rimeaddr_copy
+                0x0000195a        0xe contiki-avr-atmega128rfa1.a(rimeaddr.o)
+                0x0000195a                rimeaddr_copy
  .text.rimeaddr_cmp
-                0x0000163a       0x18 contiki-avr-atmega128rfa1.a(rimeaddr.o)
-                0x0000163a                rimeaddr_cmp
+                0x00001968       0x18 contiki-avr-atmega128rfa1.a(rimeaddr.o)
+                0x00001968                rimeaddr_cmp
  .text.rimeaddr_set_node_addr
-                0x00001652        0xa contiki-avr-atmega128rfa1.a(rimeaddr.o)
-                0x00001652                rimeaddr_set_node_addr
+                0x00001980        0xa contiki-avr-atmega128rfa1.a(rimeaddr.o)
+                0x00001980                rimeaddr_set_node_addr
  .text.packet_sent
-                0x0000165c       0x52 contiki-avr-atmega128rfa1.a(rime.o)
- .text.input    0x000016ae       0x64 contiki-avr-atmega128rfa1.a(rime.o)
- .text.init     0x00001712       0x24 contiki-avr-atmega128rfa1.a(rime.o)
+                0x0000198a       0x52 contiki-avr-atmega128rfa1.a(rime.o)
+ .text.input    0x000019dc       0x64 contiki-avr-atmega128rfa1.a(rime.o)
+ .text.init     0x00001a40       0x24 contiki-avr-atmega128rfa1.a(rime.o)
  .text.rime_output
-                0x00001736       0x2c contiki-avr-atmega128rfa1.a(rime.o)
-                0x00001736                rime_output
+                0x00001a64       0x2c contiki-avr-atmega128rfa1.a(rime.o)
+                0x00001a64                rime_output
  .text.announcement_init
-                0x00001762        0x8 contiki-avr-atmega128rfa1.a(announcement.o)
-                0x00001762                announcement_init
+                0x00001a90        0x8 contiki-avr-atmega128rfa1.a(announcement.o)
+                0x00001a90                announcement_init
  .text.announcement_register_observer_callback
-                0x0000176a        0xa contiki-avr-atmega128rfa1.a(announcement.o)
-                0x0000176a                announcement_register_observer_callback
+                0x00001a98        0xa contiki-avr-atmega128rfa1.a(announcement.o)
+                0x00001a98                announcement_register_observer_callback
  .text.announcement_list
-                0x00001774        0x8 contiki-avr-atmega128rfa1.a(announcement.o)
-                0x00001774                announcement_list
+                0x00001aa2        0x8 contiki-avr-atmega128rfa1.a(announcement.o)
+                0x00001aa2                announcement_list
  .text.announcement_heard
-                0x0000177c       0x62 contiki-avr-atmega128rfa1.a(announcement.o)
-                0x0000177c                announcement_heard
+                0x00001aaa       0x62 contiki-avr-atmega128rfa1.a(announcement.o)
+                0x00001aaa                announcement_heard
  .text.adv_packet_sent
-                0x000017de        0x2 contiki-avr-atmega128rfa1.a(broadcast-annou)
+                0x00001b0c        0x2 contiki-avr-atmega128rfa1.a(broadcast-annou)
  .text.set_timers
-                0x000017e0       0x3e contiki-avr-atmega128rfa1.a(broadcast-annou)
+                0x00001b0e       0x3e contiki-avr-atmega128rfa1.a(broadcast-annou)
  .text.send_timer
-                0x0000181e       0x28 contiki-avr-atmega128rfa1.a(broadcast-annou)
+                0x00001b4c       0x28 contiki-avr-atmega128rfa1.a(broadcast-annou)
  .text.send_adv
-                0x00001846       0x8e contiki-avr-atmega128rfa1.a(broadcast-annou)
+                0x00001b74       0x8e contiki-avr-atmega128rfa1.a(broadcast-annou)
  .text.adv_packet_received
-                0x000018d4       0x88 contiki-avr-atmega128rfa1.a(broadcast-annou)
+                0x00001c02       0x88 contiki-avr-atmega128rfa1.a(broadcast-annou)
  .text.new_announcement
-                0x0000195c       0x20 contiki-avr-atmega128rfa1.a(broadcast-annou)
+                0x00001c8a       0x20 contiki-avr-atmega128rfa1.a(broadcast-annou)
  .text.broadcast_announcement_init
-                0x0000197c       0x4c contiki-avr-atmega128rfa1.a(broadcast-annou)
-                0x0000197c                broadcast_announcement_init
+                0x00001caa       0x4c contiki-avr-atmega128rfa1.a(broadcast-annou)
+                0x00001caa                broadcast_announcement_init
  .text.sent_by_abc
-                0x000019c8       0x18 contiki-avr-atmega128rfa1.a(broadcast.o)
+                0x00001cf6       0x18 contiki-avr-atmega128rfa1.a(broadcast.o)
  .text.recv_from_abc
-                0x000019e0       0x4c contiki-avr-atmega128rfa1.a(broadcast.o)
+                0x00001d0e       0x4c contiki-avr-atmega128rfa1.a(broadcast.o)
  .text.broadcast_open
-                0x00001a2c       0x34 contiki-avr-atmega128rfa1.a(broadcast.o)
-                0x00001a2c                broadcast_open
+                0x00001d5a       0x34 contiki-avr-atmega128rfa1.a(broadcast.o)
+                0x00001d5a                broadcast_open
  .text.broadcast_send
-                0x00001a60       0x1a contiki-avr-atmega128rfa1.a(broadcast.o)
-                0x00001a60                broadcast_send
+                0x00001d8e       0x1a contiki-avr-atmega128rfa1.a(broadcast.o)
+                0x00001d8e                broadcast_send
  .text.abc_open
-                0x00001a7a       0x30 contiki-avr-atmega128rfa1.a(abc.o)
-                0x00001a7a                abc_open
+                0x00001da8       0x30 contiki-avr-atmega128rfa1.a(abc.o)
+                0x00001da8                abc_open
  .text.abc_send
-                0x00001aaa        0x4 contiki-avr-atmega128rfa1.a(abc.o)
-                0x00001aaa                abc_send
+                0x00001dd8        0x4 contiki-avr-atmega128rfa1.a(abc.o)
+                0x00001dd8                abc_send
  .text.abc_input
-                0x00001aae       0x18 contiki-avr-atmega128rfa1.a(abc.o)
-                0x00001aae                abc_input
+                0x00001ddc       0x18 contiki-avr-atmega128rfa1.a(abc.o)
+                0x00001ddc                abc_input
  .text.abc_sent
-                0x00001ac6       0x18 contiki-avr-atmega128rfa1.a(abc.o)
-                0x00001ac6                abc_sent
+                0x00001df4       0x18 contiki-avr-atmega128rfa1.a(abc.o)
+                0x00001df4                abc_sent
  .text.chameleon_init
-                0x00001ade        0x4 contiki-avr-atmega128rfa1.a(chameleon.o)
-                0x00001ade                chameleon_init
+                0x00001e0c        0x4 contiki-avr-atmega128rfa1.a(chameleon.o)
+                0x00001e0c                chameleon_init
  .text.chameleon_parse
-                0x00001ae2       0x26 contiki-avr-atmega128rfa1.a(chameleon.o)
-                0x00001ae2                chameleon_parse
+                0x00001e10       0x26 contiki-avr-atmega128rfa1.a(chameleon.o)
+                0x00001e10                chameleon_parse
  .text.chameleon_create
-                0x00001b08       0x36 contiki-avr-atmega128rfa1.a(chameleon.o)
-                0x00001b08                chameleon_create
+                0x00001e36       0x36 contiki-avr-atmega128rfa1.a(chameleon.o)
+                0x00001e36                chameleon_create
  .text.chameleon_hdrsize
-                0x00001b3e        0xa contiki-avr-atmega128rfa1.a(chameleon.o)
-                0x00001b3e                chameleon_hdrsize
+                0x00001e6c        0xa contiki-avr-atmega128rfa1.a(chameleon.o)
+                0x00001e6c                chameleon_hdrsize
  .text.channel_init
-                0x00001b48        0x8 contiki-avr-atmega128rfa1.a(channel.o)
-                0x00001b48                channel_init
+                0x00001e76        0x8 contiki-avr-atmega128rfa1.a(channel.o)
+                0x00001e76                channel_init
  .text.channel_open
-                0x00001b50       0x10 contiki-avr-atmega128rfa1.a(channel.o)
-                0x00001b50                channel_open
+                0x00001e7e       0x10 contiki-avr-atmega128rfa1.a(channel.o)
+                0x00001e7e                channel_open
  .text.channel_lookup
-                0x00001b60       0x2e contiki-avr-atmega128rfa1.a(channel.o)
-                0x00001b60                channel_lookup
+                0x00001e8e       0x2e contiki-avr-atmega128rfa1.a(channel.o)
+                0x00001e8e                channel_lookup
  .text.channel_set_attributes
-                0x00001b8e       0x2a contiki-avr-atmega128rfa1.a(channel.o)
-                0x00001b8e                channel_set_attributes
+                0x00001ebc       0x2a contiki-avr-atmega128rfa1.a(channel.o)
+                0x00001ebc                channel_set_attributes
  .text.header_size
-                0x00001bb8       0x20 contiki-avr-atmega128rfa1.a(chameleon-bitop)
+                0x00001ee6       0x20 contiki-avr-atmega128rfa1.a(chameleon-bitop)
  .text.get_bits_in_byte
-                0x00001bd8       0x3e contiki-avr-atmega128rfa1.a(chameleon-bitop)
-                0x00001bd8                get_bits_in_byte
+                0x00001f06       0x3e contiki-avr-atmega128rfa1.a(chameleon-bitop)
+                0x00001f06                get_bits_in_byte
  .text.get_bits
-                0x00001c16       0xec contiki-avr-atmega128rfa1.a(chameleon-bitop)
-                0x00001c16                get_bits
+                0x00001f44       0xec contiki-avr-atmega128rfa1.a(chameleon-bitop)
+                0x00001f44                get_bits
  .text.unpack_header
-                0x00001d02      0x10e contiki-avr-atmega128rfa1.a(chameleon-bitop)
+                0x00002030      0x10e contiki-avr-atmega128rfa1.a(chameleon-bitop)
  .text.set_bits_in_byte
-                0x00001e10       0x2e contiki-avr-atmega128rfa1.a(chameleon-bitop)
-                0x00001e10                set_bits_in_byte
+                0x0000213e       0x2e contiki-avr-atmega128rfa1.a(chameleon-bitop)
+                0x0000213e                set_bits_in_byte
  .text.set_bits
-                0x00001e3e      0x126 contiki-avr-atmega128rfa1.a(chameleon-bitop)
-                0x00001e3e                set_bits
+                0x0000216c      0x126 contiki-avr-atmega128rfa1.a(chameleon-bitop)
+                0x0000216c                set_bits
  .text.pack_header
-                0x00001f64       0xfe contiki-avr-atmega128rfa1.a(chameleon-bitop)
+                0x00002292       0xfe contiki-avr-atmega128rfa1.a(chameleon-bitop)
  .text.send_packet
-                0x00002062        0xa contiki-avr-atmega128rfa1.a(nullmac.o)
+                0x00002390        0xa contiki-avr-atmega128rfa1.a(nullmac.o)
  .text.packet_input
-                0x0000206c        0xa contiki-avr-atmega128rfa1.a(nullmac.o)
- .text.on       0x00002076        0xa contiki-avr-atmega128rfa1.a(nullmac.o)
- .text.off      0x00002080        0xa contiki-avr-atmega128rfa1.a(nullmac.o)
+                0x0000239a        0xa contiki-avr-atmega128rfa1.a(nullmac.o)
+ .text.on       0x000023a4        0xa contiki-avr-atmega128rfa1.a(nullmac.o)
+ .text.off      0x000023ae        0xa contiki-avr-atmega128rfa1.a(nullmac.o)
  .text.channel_check_interval
-                0x0000208a        0x6 contiki-avr-atmega128rfa1.a(nullmac.o)
- .text.init     0x00002090        0x2 contiki-avr-atmega128rfa1.a(nullmac.o)
- .text.on       0x00002092        0xa contiki-avr-atmega128rfa1.a(sicslowmac.o)
+                0x000023b8        0x6 contiki-avr-atmega128rfa1.a(nullmac.o)
+ .text.init     0x000023be        0x2 contiki-avr-atmega128rfa1.a(nullmac.o)
+ .text.on       0x000023c0        0xa contiki-avr-atmega128rfa1.a(sicslowmac.o)
  .text.channel_check_interval
-                0x0000209c        0x6 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+                0x000023ca        0x6 contiki-avr-atmega128rfa1.a(sicslowmac.o)
  .text.send_packet
-                0x000020a2      0x136 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+                0x000023d0      0x136 contiki-avr-atmega128rfa1.a(sicslowmac.o)
  .text.send_list
-                0x000021d8       0x48 contiki-avr-atmega128rfa1.a(sicslowmac.o)
-                0x000021d8                send_list
+                0x00002506       0x48 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+                0x00002506                send_list
  .text.input_packet
-                0x00002220       0xd6 contiki-avr-atmega128rfa1.a(sicslowmac.o)
- .text.init     0x000022f6       0x12 contiki-avr-atmega128rfa1.a(sicslowmac.o)
- .text.off      0x00002308       0x18 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+                0x0000254e       0xd6 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+ .text.init     0x00002624       0x12 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+ .text.off      0x00002636       0x18 contiki-avr-atmega128rfa1.a(sicslowmac.o)
  .text.call_process.part.0
-                0x00002320       0x4e contiki-avr-atmega128rfa1.a(process.o)
+                0x0000264e       0x4e contiki-avr-atmega128rfa1.a(process.o)
  .text.call_process
-                0x0000236e        0xc contiki-avr-atmega128rfa1.a(process.o)
+                0x0000269c        0xc contiki-avr-atmega128rfa1.a(process.o)
  .text.exit_process
-                0x0000237a       0xd8 contiki-avr-atmega128rfa1.a(process.o)
- .text.do_poll  0x00002452       0x3e contiki-avr-atmega128rfa1.a(process.o)
+                0x000026a8       0xd8 contiki-avr-atmega128rfa1.a(process.o)
+ .text.do_poll  0x00002780       0x3e contiki-avr-atmega128rfa1.a(process.o)
  .text.process_alloc_event
-                0x00002490        0xe contiki-avr-atmega128rfa1.a(process.o)
-                0x00002490                process_alloc_event
+                0x000027be        0xe contiki-avr-atmega128rfa1.a(process.o)
+                0x000027be                process_alloc_event
  .text.process_init
-                0x0000249e       0x20 contiki-avr-atmega128rfa1.a(process.o)
-                0x0000249e                process_init
+                0x000027cc       0x20 contiki-avr-atmega128rfa1.a(process.o)
+                0x000027cc                process_init
  .text.process_run
-                0x000024be       0xc6 contiki-avr-atmega128rfa1.a(process.o)
-                0x000024be                process_run
+                0x000027ec       0xc6 contiki-avr-atmega128rfa1.a(process.o)
+                0x000027ec                process_run
  .text.process_post
-                0x00002584       0x3c contiki-avr-atmega128rfa1.a(process.o)
-                0x00002584                process_post
+                0x000028b2       0x3c contiki-avr-atmega128rfa1.a(process.o)
+                0x000028b2                process_post
  .text.process_post_synch
-                0x000025c0       0x1e contiki-avr-atmega128rfa1.a(process.o)
-                0x000025c0                process_post_synch
+                0x000028ee       0x1e contiki-avr-atmega128rfa1.a(process.o)
+                0x000028ee                process_post_synch
  .text.process_start
-                0x000025de       0x42 contiki-avr-atmega128rfa1.a(process.o)
-                0x000025de                process_start
+                0x0000290c       0x42 contiki-avr-atmega128rfa1.a(process.o)
+                0x0000290c                process_start
  .text.process_poll
-                0x00002620       0x18 contiki-avr-atmega128rfa1.a(process.o)
-                0x00002620                process_poll
+                0x0000294e       0x18 contiki-avr-atmega128rfa1.a(process.o)
+                0x0000294e                process_poll
  .text.autostart_start
-                0x00002638       0x1e contiki-avr-atmega128rfa1.a(autostart.o)
-                0x00002638                autostart_start
+                0x00002966       0x1e contiki-avr-atmega128rfa1.a(autostart.o)
+                0x00002966                autostart_start
  .text.list_init
-                0x00002656        0x8 contiki-avr-atmega128rfa1.a(list.o)
-                0x00002656                list_init
+                0x00002984        0x8 contiki-avr-atmega128rfa1.a(list.o)
+                0x00002984                list_init
  .text.list_head
-                0x0000265e        0x8 contiki-avr-atmega128rfa1.a(list.o)
-                0x0000265e                list_head
+                0x0000298c        0x8 contiki-avr-atmega128rfa1.a(list.o)
+                0x0000298c                list_head
  .text.list_tail
-                0x00002666       0x20 contiki-avr-atmega128rfa1.a(list.o)
-                0x00002666                list_tail
+                0x00002994       0x20 contiki-avr-atmega128rfa1.a(list.o)
+                0x00002994                list_tail
  .text.list_remove
-                0x00002686       0x36 contiki-avr-atmega128rfa1.a(list.o)
-                0x00002686                list_remove
+                0x000029b4       0x36 contiki-avr-atmega128rfa1.a(list.o)
+                0x000029b4                list_remove
  .text.list_add
-                0x000026bc       0x32 contiki-avr-atmega128rfa1.a(list.o)
-                0x000026bc                list_add
+                0x000029ea       0x32 contiki-avr-atmega128rfa1.a(list.o)
+                0x000029ea                list_add
  .text.list_item_next
-                0x000026ee       0x12 contiki-avr-atmega128rfa1.a(list.o)
-                0x000026ee                list_item_next
+                0x00002a1c       0x12 contiki-avr-atmega128rfa1.a(list.o)
+                0x00002a1c                list_item_next
  .text.update_time
-                0x00002700       0x64 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x00002a2e       0x64 contiki-avr-atmega128rfa1.a(etimer.o)
  .text.etimer_request_poll
-                0x00002764        0x8 contiki-avr-atmega128rfa1.a(etimer.o)
-                0x00002764                etimer_request_poll
+                0x00002a92        0x8 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x00002a92                etimer_request_poll
  .text.process_thread_etimer_process
-                0x0000276c      0x106 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x00002a9a      0x106 contiki-avr-atmega128rfa1.a(etimer.o)
  .text.add_timer
-                0x00002872       0x5e contiki-avr-atmega128rfa1.a(etimer.o)
+                0x00002ba0       0x5e contiki-avr-atmega128rfa1.a(etimer.o)
  .text.etimer_set
-                0x000028d0       0x14 contiki-avr-atmega128rfa1.a(etimer.o)
-                0x000028d0                etimer_set
+                0x00002bfe       0x14 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x00002bfe                etimer_set
  .text.etimer_restart
-                0x000028e4       0x14 contiki-avr-atmega128rfa1.a(etimer.o)
-                0x000028e4                etimer_restart
+                0x00002c12       0x14 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x00002c12                etimer_restart
  .text.etimer_expired
-                0x000028f8       0x16 contiki-avr-atmega128rfa1.a(etimer.o)
-                0x000028f8                etimer_expired
+                0x00002c26       0x16 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x00002c26                etimer_expired
  .text.etimer_pending
-                0x0000290e       0x16 contiki-avr-atmega128rfa1.a(etimer.o)
-                0x0000290e                etimer_pending
+                0x00002c3c       0x16 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x00002c3c                etimer_pending
  .text.process_thread_ctimer_process
-                0x00002924       0xc8 contiki-avr-atmega128rfa1.a(ctimer.o)
+                0x00002c52       0xc8 contiki-avr-atmega128rfa1.a(ctimer.o)
  .text.ctimer_init
-                0x000029ec       0x18 contiki-avr-atmega128rfa1.a(ctimer.o)
-                0x000029ec                ctimer_init
+                0x00002d1a       0x18 contiki-avr-atmega128rfa1.a(ctimer.o)
+                0x00002d1a                ctimer_init
  .text.ctimer_set
-                0x00002a04       0x64 contiki-avr-atmega128rfa1.a(ctimer.o)
-                0x00002a04                ctimer_set
+                0x00002d32       0x64 contiki-avr-atmega128rfa1.a(ctimer.o)
+                0x00002d32                ctimer_set
  .text.rtimer_init
-                0x00002a68        0x4 contiki-avr-atmega128rfa1.a(rtimer.o)
-                0x00002a68                rtimer_init
+                0x00002d96        0x4 contiki-avr-atmega128rfa1.a(rtimer.o)
+                0x00002d96                rtimer_init
  .text.rtimer_run_next
-                0x00002a6c       0x3e contiki-avr-atmega128rfa1.a(rtimer.o)
-                0x00002a6c                rtimer_run_next
+                0x00002d9a       0x3e contiki-avr-atmega128rfa1.a(rtimer.o)
+                0x00002d9a                rtimer_run_next
  .text.print_stats
-                0x00002aaa      0x1c0 contiki-avr-atmega128rfa1.a(print-stats.o)
-                0x00002aaa                print_stats
+                0x00002dd8      0x1c0 contiki-avr-atmega128rfa1.a(print-stats.o)
+                0x00002dd8                print_stats
  .text.random_init
-                0x00002c6a        0x4 contiki-avr-atmega128rfa1.a(random.o)
-                0x00002c6a                random_init
+                0x00002f98        0x4 contiki-avr-atmega128rfa1.a(random.o)
+                0x00002f98                random_init
  .text.random_rand
-                0x00002c6e        0x4 contiki-avr-atmega128rfa1.a(random.o)
-                0x00002c6e                random_rand
+                0x00002f9c        0x4 contiki-avr-atmega128rfa1.a(random.o)
+                0x00002f9c                random_rand
  .text.packetbuf_hdrreduce
-                0x00002c72       0x3a contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002c72                packetbuf_hdrreduce
+                0x00002fa0       0x3a contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00002fa0                packetbuf_hdrreduce
  .text.packetbuf_set_datalen
-                0x00002cac        0xa contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002cac                packetbuf_set_datalen
+                0x00002fda        0xa contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00002fda                packetbuf_set_datalen
  .text.packetbuf_dataptr
-                0x00002cb6        0xe contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002cb6                packetbuf_dataptr
+                0x00002fe4        0xe contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00002fe4                packetbuf_dataptr
  .text.packetbuf_hdrptr
-                0x00002cc4        0xc contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002cc4                packetbuf_hdrptr
+                0x00002ff2        0xc contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00002ff2                packetbuf_hdrptr
  .text.packetbuf_is_reference
-                0x00002cd0       0x18 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002cd0                packetbuf_is_reference
+                0x00002ffe       0x18 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00002ffe                packetbuf_is_reference
  .text.packetbuf_compact
-                0x00002ce8       0x5e contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002ce8                packetbuf_compact
+                0x00003016       0x5e contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00003016                packetbuf_compact
  .text.packetbuf_datalen
-                0x00002d46        0xa contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002d46                packetbuf_datalen
+                0x00003074        0xa contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00003074                packetbuf_datalen
  .text.packetbuf_totlen
-                0x00002d50       0x16 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002d50                packetbuf_totlen
+                0x0000307e       0x16 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x0000307e                packetbuf_totlen
  .text.packetbuf_hdralloc
-                0x00002d66       0x3c contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002d66                packetbuf_hdralloc
+                0x00003094       0x3c contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00003094                packetbuf_hdralloc
  .text.packetbuf_attr_clear
-                0x00002da2       0x32 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002da2                packetbuf_attr_clear
+                0x000030d0       0x32 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x000030d0                packetbuf_attr_clear
  .text.packetbuf_clear
-                0x00002dd4       0x26 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002dd4                packetbuf_clear
+                0x00003102       0x26 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00003102                packetbuf_clear
  .text.packetbuf_copyfrom
-                0x00002dfa       0x5e contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002dfa                packetbuf_copyfrom
+                0x00003128       0x5e contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00003128                packetbuf_copyfrom
  .text.packetbuf_attr_copyfrom
-                0x00002e58       0x22 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002e58                packetbuf_attr_copyfrom
+                0x00003186       0x22 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00003186                packetbuf_attr_copyfrom
  .text.packetbuf_set_attr
-                0x00002e7a       0x16 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002e7a                packetbuf_set_attr
+                0x000031a8       0x16 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x000031a8                packetbuf_set_attr
  .text.packetbuf_attr
-                0x00002e90       0x12 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002e90                packetbuf_attr
+                0x000031be       0x12 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x000031be                packetbuf_attr
  .text.packetbuf_set_addr
-                0x00002ea2       0x14 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002ea2                packetbuf_set_addr
+                0x000031d0       0x14 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x000031d0                packetbuf_set_addr
  .text.packetbuf_addr
-                0x00002eb6        0xc contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00002eb6                packetbuf_addr
+                0x000031e4        0xc contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x000031e4                packetbuf_addr
  .text.queuebuf_init
-                0x00002ec2       0x18 contiki-avr-atmega128rfa1.a(queuebuf.o)
-                0x00002ec2                queuebuf_init
+                0x000031f0       0x18 contiki-avr-atmega128rfa1.a(queuebuf.o)
+                0x000031f0                queuebuf_init
  .text.queuebuf_to_packetbuf
-                0x00002eda       0x8e contiki-avr-atmega128rfa1.a(queuebuf.o)
-                0x00002eda                queuebuf_to_packetbuf
+                0x00003208       0x8e contiki-avr-atmega128rfa1.a(queuebuf.o)
+                0x00003208                queuebuf_to_packetbuf
  .text.start_periodic_tcp_timer
-                0x00002f68       0x16 contiki-avr-atmega128rfa1.a(tcpip.o)
+                0x00003296       0x16 contiki-avr-atmega128rfa1.a(tcpip.o)
  .text.tcpip_output
-                0x00002f7e       0x12 contiki-avr-atmega128rfa1.a(tcpip.o)
-                0x00002f7e                tcpip_output
+                0x000032ac       0x12 contiki-avr-atmega128rfa1.a(tcpip.o)
+                0x000032ac                tcpip_output
  .text.process_thread_tcpip_process
-                0x00002f90      0x21c contiki-avr-atmega128rfa1.a(tcpip.o)
+                0x000032be      0x21c contiki-avr-atmega128rfa1.a(tcpip.o)
  .text.tcpip_uipcall
-                0x000031ac       0x8a contiki-avr-atmega128rfa1.a(tcpip.o)
-                0x000031ac                tcpip_uipcall
+                0x000034da       0x8a contiki-avr-atmega128rfa1.a(tcpip.o)
+                0x000034da                tcpip_uipcall
  .text.uip_split_output
-                0x00003236      0x114 contiki-avr-atmega128rfa1.a(uip-split.o)
-                0x00003236                uip_split_output
- .text.chksum   0x0000334a       0x4a contiki-avr-atmega128rfa1.a(uip.o)
+                0x00003564      0x114 contiki-avr-atmega128rfa1.a(uip-split.o)
+                0x00003564                uip_split_output
+ .text.chksum   0x00003678       0x4a contiki-avr-atmega128rfa1.a(uip.o)
  .text.upper_layer_chksum
-                0x00003394       0x4e contiki-avr-atmega128rfa1.a(uip.o)
+                0x000036c2       0x4e contiki-avr-atmega128rfa1.a(uip.o)
  .text.uip_add32
-                0x000033e2       0x6e contiki-avr-atmega128rfa1.a(uip.o)
-                0x000033e2                uip_add32
+                0x00003710       0x6e contiki-avr-atmega128rfa1.a(uip.o)
+                0x00003710                uip_add32
  .text.unlikely.uip_add_rcv_nxt
-                0x00003450       0x34 contiki-avr-atmega128rfa1.a(uip.o)
+                0x0000377e       0x34 contiki-avr-atmega128rfa1.a(uip.o)
  .text.uip_ipchksum
-                0x00003484       0x22 contiki-avr-atmega128rfa1.a(uip.o)
-                0x00003484                uip_ipchksum
+                0x000037b2       0x22 contiki-avr-atmega128rfa1.a(uip.o)
+                0x000037b2                uip_ipchksum
  .text.uip_tcpchksum
-                0x000034a6        0x6 contiki-avr-atmega128rfa1.a(uip.o)
-                0x000034a6                uip_tcpchksum
+                0x000037d4        0x6 contiki-avr-atmega128rfa1.a(uip.o)
+                0x000037d4                uip_tcpchksum
  .text.uip_udpchksum
-                0x000034ac        0x6 contiki-avr-atmega128rfa1.a(uip.o)
-                0x000034ac                uip_udpchksum
+                0x000037da        0x6 contiki-avr-atmega128rfa1.a(uip.o)
+                0x000037da                uip_udpchksum
  .text.uip_init
-                0x000034b2       0x58 contiki-avr-atmega128rfa1.a(uip.o)
-                0x000034b2                uip_init
+                0x000037e0       0x58 contiki-avr-atmega128rfa1.a(uip.o)
+                0x000037e0                uip_init
  .text.uip_unlisten
-                0x0000350a       0x34 contiki-avr-atmega128rfa1.a(uip.o)
-                0x0000350a                uip_unlisten
+                0x00003838       0x34 contiki-avr-atmega128rfa1.a(uip.o)
+                0x00003838                uip_unlisten
  .text.uip_process
-                0x0000353e      0xe2e contiki-avr-atmega128rfa1.a(uip.o)
-                0x0000353e                uip_process
+                0x0000386c      0xe2e contiki-avr-atmega128rfa1.a(uip.o)
+                0x0000386c                uip_process
  .text.__vector_32
-                0x0000436c       0xee contiki-avr-atmega128rfa1.a(rtimer-arch.o)
-                0x0000436c                __vector_32
+                0x0000469a       0xee contiki-avr-atmega128rfa1.a(rtimer-arch.o)
+                0x0000469a                __vector_32
  .text.rtimer_arch_init
-                0x0000445a       0x34 contiki-avr-atmega128rfa1.a(rtimer-arch.o)
-                0x0000445a                rtimer_arch_init
+                0x00004788       0x34 contiki-avr-atmega128rfa1.a(rtimer-arch.o)
+                0x00004788                rtimer_arch_init
  .text.rtimer_arch_schedule
-                0x0000448e       0x20 contiki-avr-atmega128rfa1.a(rtimer-arch.o)
-                0x0000448e                rtimer_arch_schedule
+                0x000047bc       0x20 contiki-avr-atmega128rfa1.a(rtimer-arch.o)
+                0x000047bc                rtimer_arch_schedule
  .text.__vector_13
-                0x000044ae       0x14 contiki-avr-atmega128rfa1.a(rtimer-arch.o)
-                0x000044ae                __vector_13
+                0x000047dc       0x14 contiki-avr-atmega128rfa1.a(rtimer-arch.o)
+                0x000047dc                __vector_13
  .text.field_len
-                0x000044c2       0x8e contiki-avr-atmega128rfa1.a(frame802154.o)
+                0x000047f0       0x8e contiki-avr-atmega128rfa1.a(frame802154.o)
  .text.frame802154_hdrlen
-                0x00004550       0x46 contiki-avr-atmega128rfa1.a(frame802154.o)
-                0x00004550                frame802154_hdrlen
+                0x0000487e       0x46 contiki-avr-atmega128rfa1.a(frame802154.o)
+                0x0000487e                frame802154_hdrlen
  .text.frame802154_create
-                0x00004596      0x1f4 contiki-avr-atmega128rfa1.a(frame802154.o)
-                0x00004596                frame802154_create
+                0x000048c4      0x1f4 contiki-avr-atmega128rfa1.a(frame802154.o)
+                0x000048c4                frame802154_create
  .text.frame802154_parse
-                0x0000478a      0x19c contiki-avr-atmega128rfa1.a(frame802154.o)
-                0x0000478a                frame802154_parse
+                0x00004ab8      0x19c contiki-avr-atmega128rfa1.a(frame802154.o)
+                0x00004ab8                frame802154_parse
  .text.memb_init
-                0x00004926       0x3c contiki-avr-atmega128rfa1.a(memb.o)
-                0x00004926                memb_init
+                0x00004c54       0x3c contiki-avr-atmega128rfa1.a(memb.o)
+                0x00004c54                memb_init
  .text.memb_inmemb
-                0x00004962       0x3a contiki-avr-atmega128rfa1.a(memb.o)
-                0x00004962                memb_inmemb
+                0x00004c90       0x3a contiki-avr-atmega128rfa1.a(memb.o)
+                0x00004c90                memb_inmemb
  .text.timer_set
-                0x0000499c       0x18 contiki-avr-atmega128rfa1.a(timer.o)
-                0x0000499c                timer_set
+                0x00004cca       0x18 contiki-avr-atmega128rfa1.a(timer.o)
+                0x00004cca                timer_set
  .text.timer_restart
-                0x000049b4       0x14 contiki-avr-atmega128rfa1.a(timer.o)
-                0x000049b4                timer_restart
+                0x00004ce2       0x14 contiki-avr-atmega128rfa1.a(timer.o)
+                0x00004ce2                timer_restart
  .text.timer_expired
-                0x000049c8       0x30 contiki-avr-atmega128rfa1.a(timer.o)
-                0x000049c8                timer_expired
+                0x00004cf6       0x30 contiki-avr-atmega128rfa1.a(timer.o)
+                0x00004cf6                timer_expired
  .text.libgcc.div
-                0x000049f8       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
-                0x000049f8                __udivmodhi4
+                0x00004d26       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+                0x00004d26                __udivmodhi4
  .text.libgcc.div
-                0x00004a20       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
-                0x00004a20                __udivmodsi4
- .text.libgcc   0x00004a64        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
-                0x00004a64                __tablejump2__
-                0x00004a68                __tablejump__
+                0x00004d4e       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+                0x00004d4e                __udivmodsi4
+ .text.libgcc   0x00004d92        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+                0x00004d92                __tablejump2__
+                0x00004d96                __tablejump__
  .text.avr-libc
-                0x00004a70       0xb8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
-                0x00004b06                rand_r
-                0x00004b0a                rand
-                0x00004b12                srand
+                0x00004d9e       0xb8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
+                0x00004e34                rand_r
+                0x00004e38                rand
+                0x00004e40                srand
  .text.avr-libc
-                0x00004b28       0x1a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcmp.o)
-                0x00004b28                memcmp
+                0x00004e56       0x1a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcmp.o)
+                0x00004e56                memcmp
  .text.avr-libc
-                0x00004b42       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcpy.o)
-                0x00004b42                memcpy
+                0x00004e70       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcpy.o)
+                0x00004e70                memcpy
  .text.avr-libc
-                0x00004b54        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
-                0x00004b54                memset
+                0x00004e82        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
+                0x00004e82                memset
  .text.avr-libc
-                0x00004b62       0x24 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf.o)
-                0x00004b62                printf
+                0x00004e90        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strcpy.o)
+                0x00004e90                strcpy
  .text.avr-libc
-                0x00004b86       0x48 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf_p.o)
-                0x00004b86                printf_P
+                0x00004e9e       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strlen.o)
+                0x00004e9e                strlen
  .text.avr-libc
-                0x00004bce      0x3f6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
-                0x00004bce                vfprintf
+                0x00004eb0       0x48 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf_p.o)
+                0x00004eb0                printf_P
  .text.avr-libc
-                0x00004fc4       0x20 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_block_atmega128rfa1.o)
-                0x00004fc4                __eerd_block_m128rfa1
-                0x00004fc8                __eerd_blraw_m128rfa1
+                0x00004ef8      0x3f6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
+                0x00004ef8                vfprintf
  .text.avr-libc
-                0x00004fe4       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_byte_atmega128rfa1.o)
-                0x00004fe4                __eerd_byte_m128rfa1
+                0x000052ee       0x20 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_block_atmega128rfa1.o)
+                0x000052ee                __eerd_block_m128rfa1
+                0x000052f2                __eerd_blraw_m128rfa1
  .text.avr-libc
-                0x00004ff4        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_word_atmega128rfa1.o)
-                0x00004ff4                __eerd_word_m128rfa1
+                0x0000530e       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_byte_atmega128rfa1.o)
+                0x0000530e                __eerd_byte_m128rfa1
  .text.avr-libc
-                0x00005000       0x14 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_block_atmega128rfa1.o)
-                0x00005000                __eewr_block_m128rfa1
+                0x0000531e        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_word_atmega128rfa1.o)
+                0x0000531e                __eerd_word_m128rfa1
  .text.avr-libc
-                0x00005014       0x1c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_byte_atmega128rfa1.o)
-                0x00005014                __eewr_byte_m128rfa1
-                0x00005016                __eewr_r18_m128rfa1
+                0x0000532a       0x14 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_block_atmega128rfa1.o)
+                0x0000532a                __eewr_block_m128rfa1
  .text.avr-libc
-                0x00005030        0xa c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_word_atmega128rfa1.o)
-                0x00005030                __eewr_word_m128rfa1
+                0x0000533e       0x1c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_byte_atmega128rfa1.o)
+                0x0000533e                __eewr_byte_m128rfa1
+                0x00005340                __eewr_r18_m128rfa1
  .text.avr-libc
-                0x0000503a       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
-                0x0000503a                strnlen_P
+                0x0000535a        0xa c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_word_atmega128rfa1.o)
+                0x0000535a                __eewr_word_m128rfa1
  .text.avr-libc
-                0x00005050       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strnlen.o)
-                0x00005050                strnlen
+                0x00005364       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strnlen_P.o)
+                0x00005364                strnlen_P
  .text.avr-libc
-                0x00005066       0x64 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fputc.o)
-                0x00005066                fputc
+                0x0000537a       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(strnlen.o)
+                0x0000537a                strnlen
  .text.avr-libc
-                0x000050ca       0xbc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
-                0x000050ca                __ultoa_invert
+                0x00005390       0x64 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fputc.o)
+                0x00005390                fputc
+ .text.avr-libc
+                0x000053f4       0xbc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(ultoa_invert.o)
+                0x000053f4                __ultoa_invert
  .text.libgcc.div
-                0x00005186       0x2e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
-                0x00005186                __divmodsi4
+                0x000054b0       0x2e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+                0x000054b0                __divmodsi4
  .text.libgcc.div
-                0x000051b4       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
-                0x000051b4                __negsi2
+                0x000054de       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+                0x000054de                __negsi2
  .text.libgcc.mul
-                0x000051c4       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
-                0x000051c4                __muluhisi3
+                0x000054ee       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+                0x000054ee                __muluhisi3
  .text.libgcc.mul
-                0x000051da       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
-                0x000051da                __mulshisi3
-                0x000051e0                __mulohisi3
+                0x00005504       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+                0x00005504                __mulshisi3
+                0x0000550a                __mulohisi3
  .text.libgcc.mul
-                0x000051ea       0x1e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
-                0x000051ea                __umulhisi3
-                0x00005208                . = ALIGN (0x2)
+                0x00005514       0x1e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+                0x00005514                __umulhisi3
+                0x00005532                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00005208        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
-                0x00005208                _exit
-                0x00005208                exit
+ .fini9         0x00005532        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+                0x00005532                _exit
+                0x00005532                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -1632,11 +1658,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00005208        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .fini0         0x00005532        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000520c                _etext = .
+                0x00005536                _etext = .
 
-.data           0x00800200      0x140 load address 0x0000520c
+.data           0x00800200      0x140 load address 0x00005536
                 0x00800200                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800200        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
@@ -1725,157 +1751,164 @@ END GROUP
                 0x00800340                _edata = .
                 0x00800340                PROVIDE (__data_end, .)
 
-.bss            0x00800340     0x112a
+.bss            0x00800340     0x11ae
                 0x00800340                PROVIDE (__bss_start, .)
  *(.bss)
+ .bss           0x00800340        0x4 C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o
+                0x00800340                sendMode
+                0x00800341                spiDATA
+                0x00800342                dataBufferCounter
+                0x00800343                dataBufferLimit
  *(.bss*)
- .bss.rcount    0x00800340        0x1 contiki-avr-atmega128rfa1.a(clock.o)
- .bss.scount    0x00800341        0x1 contiki-avr-atmega128rfa1.a(clock.o)
- .bss.count     0x00800342        0x2 contiki-avr-atmega128rfa1.a(clock.o)
+ .bss.rcount    0x00800344        0x1 contiki-avr-atmega128rfa1.a(clock.o)
+ .bss.scount    0x00800345        0x1 contiki-avr-atmega128rfa1.a(clock.o)
+ .bss.count     0x00800346        0x2 contiki-avr-atmega128rfa1.a(clock.o)
  .bss.stdout_rs232_port
-                0x00800344        0x1 contiki-avr-atmega128rfa1.a(rs232.o)
- .bss.buffer    0x00800345       0x81 contiki-avr-atmega128rfa1.a(rf230bb.o)
- .bss.channel   0x008003c6        0x1 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00800348        0x1 contiki-avr-atmega128rfa1.a(rs232.o)
+ .bss.buffer    0x00800349       0x81 contiki-avr-atmega128rfa1.a(rf230bb.o)
+ .bss.channel   0x008003ca        0x1 contiki-avr-atmega128rfa1.a(rf230bb.o)
  .bss.sniffers_list
-                0x008003c7        0x2 contiki-avr-atmega128rfa1.a(rime.o)
+                0x008003cb        0x2 contiki-avr-atmega128rfa1.a(rime.o)
  .bss.observer_callback
-                0x008003c9        0x2 contiki-avr-atmega128rfa1.a(announcement.o)
+                0x008003cd        0x2 contiki-avr-atmega128rfa1.a(announcement.o)
  .bss.announcements_list
-                0x008003cb        0x2 contiki-avr-atmega128rfa1.a(announcement.o)
- .bss.c         0x008003cd       0x35 contiki-avr-atmega128rfa1.a(broadcast-annou)
+                0x008003cf        0x2 contiki-avr-atmega128rfa1.a(announcement.o)
+ .bss.c         0x008003d1       0x35 contiki-avr-atmega128rfa1.a(broadcast-annou)
  .bss.channel_list_list
-                0x00800402        0x2 contiki-avr-atmega128rfa1.a(channel.o)
- .bss.mac_dsn   0x00800404        0x1 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+                0x00800406        0x2 contiki-avr-atmega128rfa1.a(channel.o)
+ .bss.mac_dsn   0x00800408        0x1 contiki-avr-atmega128rfa1.a(sicslowmac.o)
  .bss.snum.1752
-                0x00800405        0x1 contiki-avr-atmega128rfa1.a(process.o)
- .bss.p.1737    0x00800406        0x2 contiki-avr-atmega128rfa1.a(process.o)
+                0x00800409        0x1 contiki-avr-atmega128rfa1.a(process.o)
+ .bss.p.1737    0x0080040a        0x2 contiki-avr-atmega128rfa1.a(process.o)
  .bss.receiver.1736
-                0x00800408        0x2 contiki-avr-atmega128rfa1.a(process.o)
+                0x0080040c        0x2 contiki-avr-atmega128rfa1.a(process.o)
  .bss.data.1735
-                0x0080040a        0x2 contiki-avr-atmega128rfa1.a(process.o)
- .bss.ev.1734   0x0080040c        0x1 contiki-avr-atmega128rfa1.a(process.o)
+                0x0080040e        0x2 contiki-avr-atmega128rfa1.a(process.o)
+ .bss.ev.1734   0x00800410        0x1 contiki-avr-atmega128rfa1.a(process.o)
  .bss.poll_requested
-                0x0080040d        0x1 contiki-avr-atmega128rfa1.a(process.o)
- .bss.events    0x0080040e       0xa0 contiki-avr-atmega128rfa1.a(process.o)
- .bss.fevent    0x008004ae        0x1 contiki-avr-atmega128rfa1.a(process.o)
- .bss.nevents   0x008004af        0x1 contiki-avr-atmega128rfa1.a(process.o)
+                0x00800411        0x1 contiki-avr-atmega128rfa1.a(process.o)
+ .bss.events    0x00800412       0xa0 contiki-avr-atmega128rfa1.a(process.o)
+ .bss.fevent    0x008004b2        0x1 contiki-avr-atmega128rfa1.a(process.o)
+ .bss.nevents   0x008004b3        0x1 contiki-avr-atmega128rfa1.a(process.o)
  .bss.lastevent
-                0x008004b0        0x1 contiki-avr-atmega128rfa1.a(process.o)
+                0x008004b4        0x1 contiki-avr-atmega128rfa1.a(process.o)
  .bss.process_current
-                0x008004b1        0x2 contiki-avr-atmega128rfa1.a(process.o)
-                0x008004b1                process_current
+                0x008004b5        0x2 contiki-avr-atmega128rfa1.a(process.o)
+                0x008004b5                process_current
  .bss.process_list
-                0x008004b3        0x2 contiki-avr-atmega128rfa1.a(process.o)
-                0x008004b3                process_list
+                0x008004b7        0x2 contiki-avr-atmega128rfa1.a(process.o)
+                0x008004b7                process_list
  .bss.next_expiration
-                0x008004b5        0x2 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x008004b9        0x2 contiki-avr-atmega128rfa1.a(etimer.o)
  .bss.timerlist
-                0x008004b7        0x2 contiki-avr-atmega128rfa1.a(etimer.o)
+                0x008004bb        0x2 contiki-avr-atmega128rfa1.a(etimer.o)
  .bss.initialized
-                0x008004b9        0x1 contiki-avr-atmega128rfa1.a(ctimer.o)
+                0x008004bd        0x1 contiki-avr-atmega128rfa1.a(ctimer.o)
  .bss.ctimer_list_list
-                0x008004ba        0x2 contiki-avr-atmega128rfa1.a(ctimer.o)
+                0x008004be        0x2 contiki-avr-atmega128rfa1.a(ctimer.o)
  .bss.next_rtimer
-                0x008004bc        0x2 contiki-avr-atmega128rfa1.a(rtimer.o)
+                0x008004c0        0x2 contiki-avr-atmega128rfa1.a(rtimer.o)
  .bss.packetbufptr
-                0x008004be        0x2 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x008004c2        0x2 contiki-avr-atmega128rfa1.a(packetbuf.o)
  .bss.packetbuf_aligned
-                0x008004c0       0xb2 contiki-avr-atmega128rfa1.a(packetbuf.o)
- .bss.hdrptr    0x00800572        0x1 contiki-avr-atmega128rfa1.a(packetbuf.o)
- .bss.bufptr    0x00800573        0x2 contiki-avr-atmega128rfa1.a(packetbuf.o)
- .bss.buflen    0x00800575        0x2 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x008004c4       0xb2 contiki-avr-atmega128rfa1.a(packetbuf.o)
+ .bss.hdrptr    0x00800576        0x1 contiki-avr-atmega128rfa1.a(packetbuf.o)
+ .bss.bufptr    0x00800577        0x2 contiki-avr-atmega128rfa1.a(packetbuf.o)
+ .bss.buflen    0x00800579        0x2 contiki-avr-atmega128rfa1.a(packetbuf.o)
  .bss.buframmem_memb_mem
-                0x00800577      0x5d0 contiki-avr-atmega128rfa1.a(queuebuf.o)
+                0x0080057b      0x5d0 contiki-avr-atmega128rfa1.a(queuebuf.o)
  .bss.buframmem_memb_count
-                0x00800b47        0x8 contiki-avr-atmega128rfa1.a(queuebuf.o)
+                0x00800b4b        0x8 contiki-avr-atmega128rfa1.a(queuebuf.o)
  .bss.refbufmem_memb_mem
-                0x00800b4f       0x6a contiki-avr-atmega128rfa1.a(queuebuf.o)
+                0x00800b53       0x6a contiki-avr-atmega128rfa1.a(queuebuf.o)
  .bss.refbufmem_memb_count
-                0x00800bb9        0x2 contiki-avr-atmega128rfa1.a(queuebuf.o)
+                0x00800bbd        0x2 contiki-avr-atmega128rfa1.a(queuebuf.o)
  .bss.bufmem_memb_mem
-                0x00800bbb       0x10 contiki-avr-atmega128rfa1.a(queuebuf.o)
+                0x00800bbf       0x10 contiki-avr-atmega128rfa1.a(queuebuf.o)
  .bss.bufmem_memb_count
-                0x00800bcb        0x8 contiki-avr-atmega128rfa1.a(queuebuf.o)
- .bss.i.5080    0x00800bd3        0x1 contiki-avr-atmega128rfa1.a(tcpip.o)
- .bss.i.5044    0x00800bd4        0x1 contiki-avr-atmega128rfa1.a(tcpip.o)
- .bss.i.5092    0x00800bd5        0x1 contiki-avr-atmega128rfa1.a(tcpip.o)
+                0x00800bcf        0x8 contiki-avr-atmega128rfa1.a(queuebuf.o)
+ .bss.i.5080    0x00800bd7        0x1 contiki-avr-atmega128rfa1.a(tcpip.o)
+ .bss.i.5044    0x00800bd8        0x1 contiki-avr-atmega128rfa1.a(tcpip.o)
+ .bss.i.5092    0x00800bd9        0x1 contiki-avr-atmega128rfa1.a(tcpip.o)
  .bss.outputfunc
-                0x00800bd6        0x2 contiki-avr-atmega128rfa1.a(tcpip.o)
- .bss.s         0x00800bd8       0x12 contiki-avr-atmega128rfa1.a(tcpip.o)
- .bss.periodic  0x00800bea        0x8 contiki-avr-atmega128rfa1.a(tcpip.o)
- .bss.tmp16     0x00800bf2        0x2 contiki-avr-atmega128rfa1.a(uip.o)
- .bss.opt       0x00800bf4        0x1 contiki-avr-atmega128rfa1.a(uip.o)
- .bss.c         0x00800bf5        0x1 contiki-avr-atmega128rfa1.a(uip.o)
- .bss.lastport  0x00800bf6        0x2 contiki-avr-atmega128rfa1.a(uip.o)
- .bss.iss       0x00800bf8        0x4 contiki-avr-atmega128rfa1.a(uip.o)
- .bss.ipid      0x00800bfc        0x2 contiki-avr-atmega128rfa1.a(uip.o)
+                0x00800bda        0x2 contiki-avr-atmega128rfa1.a(tcpip.o)
+ .bss.s         0x00800bdc       0x12 contiki-avr-atmega128rfa1.a(tcpip.o)
+ .bss.periodic  0x00800bee        0x8 contiki-avr-atmega128rfa1.a(tcpip.o)
+ .bss.tmp16     0x00800bf6        0x2 contiki-avr-atmega128rfa1.a(uip.o)
+ .bss.opt       0x00800bf8        0x1 contiki-avr-atmega128rfa1.a(uip.o)
+ .bss.c         0x00800bf9        0x1 contiki-avr-atmega128rfa1.a(uip.o)
+ .bss.lastport  0x00800bfa        0x2 contiki-avr-atmega128rfa1.a(uip.o)
+ .bss.iss       0x00800bfc        0x4 contiki-avr-atmega128rfa1.a(uip.o)
+ .bss.ipid      0x00800c00        0x2 contiki-avr-atmega128rfa1.a(uip.o)
  *(COMMON)
- COMMON         0x00800bfe        0x6 contiki-avr-atmega128rfa1.a(contiki-main.o)
-                0x00800bfe                ledtimer
-                0x00800c00                clocktime
- COMMON         0x00800c04        0xc contiki-avr-atmega128rfa1.a(clock.o)
-                0x00800c04                radioontime
-                0x00800c08                sleepseconds
-                0x00800c0c                seconds
- COMMON         0x00800c10        0x4 contiki-avr-atmega128rfa1.a(rs232.o)
-                0x00800c10                input_handler_1
-                0x00800c12                input_handler_0
- COMMON         0x00800c14      0x198 contiki-avr-atmega128rfa1.a(rf230bb.o)
-                0x00800c14                rf230_last_correlation
-                0x00800c15                rf230_last_rssi
-                0x00800c16                RF230_receivefail
-                0x00800c18                rf230_smallest_rssi
-                0x00800c19                rf230_pending
-                0x00800c1a                rf230_ccawait
-                0x00800c1b                RF230_receivepackets
-                0x00800c1d                rf230_txendwait
-                0x00800c1e                rxframe_tail
-                0x00800c1f                rxframe_head
-                0x00800c20                rxframe
-                0x00800da6                rf230_wakewait
-                0x00800da7                RF230_sendpackets
-                0x00800da9                RF230_sendfail
-                0x00800dab                RF230_receive_on
- COMMON         0x00800dac        0x2 contiki-avr-atmega128rfa1.a(rimeaddr.o)
-                0x00800dac                rimeaddr_node_addr
- COMMON         0x00800dae       0x56 contiki-avr-atmega128rfa1.a(energest.o)
-                0x00800dae                energest_total_time
-                0x00800dde                energest_total_count
-                0x00800de0                energest_current_mode
-                0x00800dec                energest_current_time
- COMMON         0x00800e04       0x38 contiki-avr-atmega128rfa1.a(packetbuf.o)
-                0x00800e04                packetbuf_addrs
-                0x00800e0c                packetbuf_attrs
- COMMON         0x00800e3c        0x1 contiki-avr-atmega128rfa1.a(tcpip.o)
-                0x00800e3c                tcpip_event
- COMMON         0x00800e3d      0x627 contiki-avr-atmega128rfa1.a(uip.o)
-                0x00800e3d                uip_len
-                0x00800e3f                uip_sappdata
-                0x00800e41                uip_acc32
-                0x00800e45                uip_aligned_buf
-                0x00801345                uip_flags
-                0x00801346                uip_udp_conn
-                0x00801348                uip_appdata
-                0x0080134a                uip_conn
-                0x0080134c                uip_conns
-                0x008013cc                uip_listenports
-                0x008013d4                uip_draddr
-                0x008013d8                uip_netmask
-                0x008013dc                uip_hostaddr
-                0x008013e0                uip_slen
-                0x008013e2                uip_udp_conns
- COMMON         0x00801464        0x6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
-                0x00801464                __iob
-                0x0080146a                PROVIDE (__bss_end, .)
-                0x0000520c                __data_load_start = LOADADDR (.data)
-                0x0000534c                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800c02        0x6 contiki-avr-atmega128rfa1.a(contiki-main.o)
+                0x00800c02                ledtimer
+                0x00800c04                clocktime
+ COMMON         0x00800c08        0xc contiki-avr-atmega128rfa1.a(clock.o)
+                0x00800c08                radioontime
+                0x00800c0c                sleepseconds
+                0x00800c10                seconds
+ COMMON         0x00800c14        0x4 contiki-avr-atmega128rfa1.a(rs232.o)
+                0x00800c14                input_handler_1
+                0x00800c16                input_handler_0
+ COMMON         0x00800c18      0x198 contiki-avr-atmega128rfa1.a(rf230bb.o)
+                0x00800c18                rf230_last_correlation
+                0x00800c19                rf230_last_rssi
+                0x00800c1a                RF230_receivefail
+                0x00800c1c                rf230_smallest_rssi
+                0x00800c1d                rf230_pending
+                0x00800c1e                rf230_ccawait
+                0x00800c1f                RF230_receivepackets
+                0x00800c21                rf230_txendwait
+                0x00800c22                rxframe_tail
+                0x00800c23                rxframe_head
+                0x00800c24                rxframe
+                0x00800daa                rf230_wakewait
+                0x00800dab                RF230_sendpackets
+                0x00800dad                RF230_sendfail
+                0x00800daf                RF230_receive_on
+ COMMON         0x00800db0        0x2 contiki-avr-atmega128rfa1.a(rimeaddr.o)
+                0x00800db0                rimeaddr_node_addr
+ COMMON         0x00800db2       0x56 contiki-avr-atmega128rfa1.a(energest.o)
+                0x00800db2                energest_total_time
+                0x00800de2                energest_total_count
+                0x00800de4                energest_current_mode
+                0x00800df0                energest_current_time
+ COMMON         0x00800e08       0x38 contiki-avr-atmega128rfa1.a(packetbuf.o)
+                0x00800e08                packetbuf_addrs
+                0x00800e10                packetbuf_attrs
+ COMMON         0x00800e40        0x1 contiki-avr-atmega128rfa1.a(tcpip.o)
+                0x00800e40                tcpip_event
+ COMMON         0x00800e41      0x627 contiki-avr-atmega128rfa1.a(uip.o)
+                0x00800e41                uip_len
+                0x00800e43                uip_sappdata
+                0x00800e45                uip_acc32
+                0x00800e49                uip_aligned_buf
+                0x00801349                uip_flags
+                0x0080134a                uip_udp_conn
+                0x0080134c                uip_appdata
+                0x0080134e                uip_conn
+                0x00801350                uip_conns
+                0x008013d0                uip_listenports
+                0x008013d8                uip_draddr
+                0x008013dc                uip_netmask
+                0x008013e0                uip_hostaddr
+                0x008013e4                uip_slen
+                0x008013e6                uip_udp_conns
+ COMMON         0x00801468       0x80 C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o
+                0x00801468                dataBuffer
+ COMMON         0x008014e8        0x6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
+                0x008014e8                __iob
+                0x008014ee                PROVIDE (__bss_end, .)
+                0x00005536                __data_load_start = LOADADDR (.data)
+                0x00005676                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080146a        0x0
-                0x0080146a                PROVIDE (__noinit_start, .)
+.noinit         0x008014ee        0x0
+                0x008014ee                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0080146a                PROVIDE (__noinit_end, .)
-                0x0080146a                _end = .
-                0x0080146a                PROVIDE (__heap_start, .)
+                0x008014ee                PROVIDE (__noinit_end, .)
+                0x008014ee                _end = .
+                0x008014ee                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000       0x29
  *(.eeprom*)
@@ -1967,9 +2000,9 @@ END GROUP
  .comment       0x00000000       0x31 contiki-avr-atmega128rfa1.a(frame802154.o)
  .comment       0x00000000       0x31 contiki-avr-atmega128rfa1.a(memb.o)
  .comment       0x00000000       0x31 contiki-avr-atmega128rfa1.a(timer.o)
+ .comment       0x00000000       0x31 C:\Users\MB\AppData\Local\Temp\ccqfXEw3.o
  .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
  .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
- .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf.o)
  .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(printf_p.o)
  .comment       0x00000030       0x2c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(vfprintf_std.o)
                                  0x2d (size before relaxing)
@@ -2070,125 +2103,125 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xea6d
+.debug_info     0x00000000     0xea77
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x364 domotica.co
- .debug_info    0x00000364      0xb70 contiki-avr-atmega128rfa1.a(contiki-main.o)
- .debug_info    0x00000ed4      0x642 contiki-avr-atmega128rfa1.a(params.o)
- .debug_info    0x00001516      0x32f contiki-avr-atmega128rfa1.a(clock.o)
- .debug_info    0x00001845      0x4a5 contiki-avr-atmega128rfa1.a(rs232.o)
- .debug_info    0x00001cea       0xe6 contiki-avr-atmega128rfa1.a(watchdog.o)
- .debug_info    0x00001dd0     0x1844 contiki-avr-atmega128rfa1.a(rf230bb.o)
- .debug_info    0x00003614      0x3d2 contiki-avr-atmega128rfa1.a(halbb.o)
- .debug_info    0x000039e6      0x1fc contiki-avr-atmega128rfa1.a(rimeaddr.o)
- .debug_info    0x00003be2      0x6ec contiki-avr-atmega128rfa1.a(rime.o)
- .debug_info    0x000042ce      0x5c9 contiki-avr-atmega128rfa1.a(announcement.o)
- .debug_info    0x00004897      0xb90 contiki-avr-atmega128rfa1.a(broadcast-annou)
- .debug_info    0x00005427      0x6ae contiki-avr-atmega128rfa1.a(broadcast.o)
- .debug_info    0x00005ad5      0x50c contiki-avr-atmega128rfa1.a(abc.o)
- .debug_info    0x00005fe1      0x386 contiki-avr-atmega128rfa1.a(chameleon.o)
- .debug_info    0x00006367      0x386 contiki-avr-atmega128rfa1.a(channel.o)
- .debug_info    0x000066ed      0x9df contiki-avr-atmega128rfa1.a(chameleon-bitop)
- .debug_info    0x000070cc      0x3bc contiki-avr-atmega128rfa1.a(nullmac.o)
- .debug_info    0x00007488      0xc3f contiki-avr-atmega128rfa1.a(sicslowmac.o)
- .debug_info    0x000080c7      0x75c contiki-avr-atmega128rfa1.a(process.o)
- .debug_info    0x00008823      0x203 contiki-avr-atmega128rfa1.a(autostart.o)
- .debug_info    0x00008a26      0x3de contiki-avr-atmega128rfa1.a(list.o)
- .debug_info    0x00008e04      0x6e9 contiki-avr-atmega128rfa1.a(etimer.o)
- .debug_info    0x000094ed      0x81c contiki-avr-atmega128rfa1.a(ctimer.o)
- .debug_info    0x00009d09      0x297 contiki-avr-atmega128rfa1.a(energest.o)
- .debug_info    0x00009fa0      0x269 contiki-avr-atmega128rfa1.a(rtimer.o)
- .debug_info    0x0000a209      0x1a8 contiki-avr-atmega128rfa1.a(print-stats.o)
- .debug_info    0x0000a3b1       0xf7 contiki-avr-atmega128rfa1.a(random.o)
- .debug_info    0x0000a4a8      0x8a4 contiki-avr-atmega128rfa1.a(packetbuf.o)
- .debug_info    0x0000ad4c      0xb0d contiki-avr-atmega128rfa1.a(queuebuf.o)
- .debug_info    0x0000b859     0x1099 contiki-avr-atmega128rfa1.a(tcpip.o)
- .debug_info    0x0000c8f2      0x3e7 contiki-avr-atmega128rfa1.a(uip-split.o)
- .debug_info    0x0000ccd9     0x117e contiki-avr-atmega128rfa1.a(uip.o)
- .debug_info    0x0000de57      0x2cf contiki-avr-atmega128rfa1.a(rtimer-arch.o)
- .debug_info    0x0000e126      0x573 contiki-avr-atmega128rfa1.a(frame802154.o)
- .debug_info    0x0000e699      0x211 contiki-avr-atmega128rfa1.a(memb.o)
- .debug_info    0x0000e8aa      0x1c3 contiki-avr-atmega128rfa1.a(timer.o)
+ .debug_info    0x00000000      0x36e domotica.co
+ .debug_info    0x0000036e      0xb70 contiki-avr-atmega128rfa1.a(contiki-main.o)
+ .debug_info    0x00000ede      0x642 contiki-avr-atmega128rfa1.a(params.o)
+ .debug_info    0x00001520      0x32f contiki-avr-atmega128rfa1.a(clock.o)
+ .debug_info    0x0000184f      0x4a5 contiki-avr-atmega128rfa1.a(rs232.o)
+ .debug_info    0x00001cf4       0xe6 contiki-avr-atmega128rfa1.a(watchdog.o)
+ .debug_info    0x00001dda     0x1844 contiki-avr-atmega128rfa1.a(rf230bb.o)
+ .debug_info    0x0000361e      0x3d2 contiki-avr-atmega128rfa1.a(halbb.o)
+ .debug_info    0x000039f0      0x1fc contiki-avr-atmega128rfa1.a(rimeaddr.o)
+ .debug_info    0x00003bec      0x6ec contiki-avr-atmega128rfa1.a(rime.o)
+ .debug_info    0x000042d8      0x5c9 contiki-avr-atmega128rfa1.a(announcement.o)
+ .debug_info    0x000048a1      0xb90 contiki-avr-atmega128rfa1.a(broadcast-annou)
+ .debug_info    0x00005431      0x6ae contiki-avr-atmega128rfa1.a(broadcast.o)
+ .debug_info    0x00005adf      0x50c contiki-avr-atmega128rfa1.a(abc.o)
+ .debug_info    0x00005feb      0x386 contiki-avr-atmega128rfa1.a(chameleon.o)
+ .debug_info    0x00006371      0x386 contiki-avr-atmega128rfa1.a(channel.o)
+ .debug_info    0x000066f7      0x9df contiki-avr-atmega128rfa1.a(chameleon-bitop)
+ .debug_info    0x000070d6      0x3bc contiki-avr-atmega128rfa1.a(nullmac.o)
+ .debug_info    0x00007492      0xc3f contiki-avr-atmega128rfa1.a(sicslowmac.o)
+ .debug_info    0x000080d1      0x75c contiki-avr-atmega128rfa1.a(process.o)
+ .debug_info    0x0000882d      0x203 contiki-avr-atmega128rfa1.a(autostart.o)
+ .debug_info    0x00008a30      0x3de contiki-avr-atmega128rfa1.a(list.o)
+ .debug_info    0x00008e0e      0x6e9 contiki-avr-atmega128rfa1.a(etimer.o)
+ .debug_info    0x000094f7      0x81c contiki-avr-atmega128rfa1.a(ctimer.o)
+ .debug_info    0x00009d13      0x297 contiki-avr-atmega128rfa1.a(energest.o)
+ .debug_info    0x00009faa      0x269 contiki-avr-atmega128rfa1.a(rtimer.o)
+ .debug_info    0x0000a213      0x1a8 contiki-avr-atmega128rfa1.a(print-stats.o)
+ .debug_info    0x0000a3bb       0xf7 contiki-avr-atmega128rfa1.a(random.o)
+ .debug_info    0x0000a4b2      0x8a4 contiki-avr-atmega128rfa1.a(packetbuf.o)
+ .debug_info    0x0000ad56      0xb0d contiki-avr-atmega128rfa1.a(queuebuf.o)
+ .debug_info    0x0000b863     0x1099 contiki-avr-atmega128rfa1.a(tcpip.o)
+ .debug_info    0x0000c8fc      0x3e7 contiki-avr-atmega128rfa1.a(uip-split.o)
+ .debug_info    0x0000cce3     0x117e contiki-avr-atmega128rfa1.a(uip.o)
+ .debug_info    0x0000de61      0x2cf contiki-avr-atmega128rfa1.a(rtimer-arch.o)
+ .debug_info    0x0000e130      0x573 contiki-avr-atmega128rfa1.a(frame802154.o)
+ .debug_info    0x0000e6a3      0x211 contiki-avr-atmega128rfa1.a(memb.o)
+ .debug_info    0x0000e8b4      0x1c3 contiki-avr-atmega128rfa1.a(timer.o)
 
-.debug_abbrev   0x00000000     0x5038
+.debug_abbrev   0x00000000     0x5049
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x1ec domotica.co
- .debug_abbrev  0x000001ec      0x30d contiki-avr-atmega128rfa1.a(contiki-main.o)
- .debug_abbrev  0x000004f9      0x1a0 contiki-avr-atmega128rfa1.a(params.o)
- .debug_abbrev  0x00000699      0x1ec contiki-avr-atmega128rfa1.a(clock.o)
- .debug_abbrev  0x00000885      0x25b contiki-avr-atmega128rfa1.a(rs232.o)
- .debug_abbrev  0x00000ae0       0x51 contiki-avr-atmega128rfa1.a(watchdog.o)
- .debug_abbrev  0x00000b31      0x500 contiki-avr-atmega128rfa1.a(rf230bb.o)
- .debug_abbrev  0x00001031      0x196 contiki-avr-atmega128rfa1.a(halbb.o)
- .debug_abbrev  0x000011c7      0x13e contiki-avr-atmega128rfa1.a(rimeaddr.o)
- .debug_abbrev  0x00001305      0x267 contiki-avr-atmega128rfa1.a(rime.o)
- .debug_abbrev  0x0000156c      0x209 contiki-avr-atmega128rfa1.a(announcement.o)
- .debug_abbrev  0x00001775      0x32a contiki-avr-atmega128rfa1.a(broadcast-annou)
- .debug_abbrev  0x00001a9f      0x248 contiki-avr-atmega128rfa1.a(broadcast.o)
- .debug_abbrev  0x00001ce7      0x1cf contiki-avr-atmega128rfa1.a(abc.o)
- .debug_abbrev  0x00001eb6      0x1cd contiki-avr-atmega128rfa1.a(chameleon.o)
- .debug_abbrev  0x00002083      0x1a6 contiki-avr-atmega128rfa1.a(channel.o)
- .debug_abbrev  0x00002229      0x35d contiki-avr-atmega128rfa1.a(chameleon-bitop)
- .debug_abbrev  0x00002586      0x175 contiki-avr-atmega128rfa1.a(nullmac.o)
- .debug_abbrev  0x000026fb      0x351 contiki-avr-atmega128rfa1.a(sicslowmac.o)
- .debug_abbrev  0x00002a4c      0x38f contiki-avr-atmega128rfa1.a(process.o)
- .debug_abbrev  0x00002ddb      0x129 contiki-avr-atmega128rfa1.a(autostart.o)
- .debug_abbrev  0x00002f04      0x1a6 contiki-avr-atmega128rfa1.a(list.o)
- .debug_abbrev  0x000030aa      0x334 contiki-avr-atmega128rfa1.a(etimer.o)
- .debug_abbrev  0x000033de      0x267 contiki-avr-atmega128rfa1.a(ctimer.o)
- .debug_abbrev  0x00003645      0x141 contiki-avr-atmega128rfa1.a(energest.o)
- .debug_abbrev  0x00003786      0x18d contiki-avr-atmega128rfa1.a(rtimer.o)
- .debug_abbrev  0x00003913      0x111 contiki-avr-atmega128rfa1.a(print-stats.o)
- .debug_abbrev  0x00003a24       0xc6 contiki-avr-atmega128rfa1.a(random.o)
- .debug_abbrev  0x00003aea      0x32e contiki-avr-atmega128rfa1.a(packetbuf.o)
- .debug_abbrev  0x00003e18      0x316 contiki-avr-atmega128rfa1.a(queuebuf.o)
- .debug_abbrev  0x0000412e      0x476 contiki-avr-atmega128rfa1.a(tcpip.o)
- .debug_abbrev  0x000045a4      0x198 contiki-avr-atmega128rfa1.a(uip-split.o)
- .debug_abbrev  0x0000473c      0x3b6 contiki-avr-atmega128rfa1.a(uip.o)
- .debug_abbrev  0x00004af2      0x15a contiki-avr-atmega128rfa1.a(rtimer-arch.o)
- .debug_abbrev  0x00004c4c      0x1d5 contiki-avr-atmega128rfa1.a(frame802154.o)
- .debug_abbrev  0x00004e21      0x11c contiki-avr-atmega128rfa1.a(memb.o)
- .debug_abbrev  0x00004f3d       0xfb contiki-avr-atmega128rfa1.a(timer.o)
+ .debug_abbrev  0x00000000      0x1fd domotica.co
+ .debug_abbrev  0x000001fd      0x30d contiki-avr-atmega128rfa1.a(contiki-main.o)
+ .debug_abbrev  0x0000050a      0x1a0 contiki-avr-atmega128rfa1.a(params.o)
+ .debug_abbrev  0x000006aa      0x1ec contiki-avr-atmega128rfa1.a(clock.o)
+ .debug_abbrev  0x00000896      0x25b contiki-avr-atmega128rfa1.a(rs232.o)
+ .debug_abbrev  0x00000af1       0x51 contiki-avr-atmega128rfa1.a(watchdog.o)
+ .debug_abbrev  0x00000b42      0x500 contiki-avr-atmega128rfa1.a(rf230bb.o)
+ .debug_abbrev  0x00001042      0x196 contiki-avr-atmega128rfa1.a(halbb.o)
+ .debug_abbrev  0x000011d8      0x13e contiki-avr-atmega128rfa1.a(rimeaddr.o)
+ .debug_abbrev  0x00001316      0x267 contiki-avr-atmega128rfa1.a(rime.o)
+ .debug_abbrev  0x0000157d      0x209 contiki-avr-atmega128rfa1.a(announcement.o)
+ .debug_abbrev  0x00001786      0x32a contiki-avr-atmega128rfa1.a(broadcast-annou)
+ .debug_abbrev  0x00001ab0      0x248 contiki-avr-atmega128rfa1.a(broadcast.o)
+ .debug_abbrev  0x00001cf8      0x1cf contiki-avr-atmega128rfa1.a(abc.o)
+ .debug_abbrev  0x00001ec7      0x1cd contiki-avr-atmega128rfa1.a(chameleon.o)
+ .debug_abbrev  0x00002094      0x1a6 contiki-avr-atmega128rfa1.a(channel.o)
+ .debug_abbrev  0x0000223a      0x35d contiki-avr-atmega128rfa1.a(chameleon-bitop)
+ .debug_abbrev  0x00002597      0x175 contiki-avr-atmega128rfa1.a(nullmac.o)
+ .debug_abbrev  0x0000270c      0x351 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+ .debug_abbrev  0x00002a5d      0x38f contiki-avr-atmega128rfa1.a(process.o)
+ .debug_abbrev  0x00002dec      0x129 contiki-avr-atmega128rfa1.a(autostart.o)
+ .debug_abbrev  0x00002f15      0x1a6 contiki-avr-atmega128rfa1.a(list.o)
+ .debug_abbrev  0x000030bb      0x334 contiki-avr-atmega128rfa1.a(etimer.o)
+ .debug_abbrev  0x000033ef      0x267 contiki-avr-atmega128rfa1.a(ctimer.o)
+ .debug_abbrev  0x00003656      0x141 contiki-avr-atmega128rfa1.a(energest.o)
+ .debug_abbrev  0x00003797      0x18d contiki-avr-atmega128rfa1.a(rtimer.o)
+ .debug_abbrev  0x00003924      0x111 contiki-avr-atmega128rfa1.a(print-stats.o)
+ .debug_abbrev  0x00003a35       0xc6 contiki-avr-atmega128rfa1.a(random.o)
+ .debug_abbrev  0x00003afb      0x32e contiki-avr-atmega128rfa1.a(packetbuf.o)
+ .debug_abbrev  0x00003e29      0x316 contiki-avr-atmega128rfa1.a(queuebuf.o)
+ .debug_abbrev  0x0000413f      0x476 contiki-avr-atmega128rfa1.a(tcpip.o)
+ .debug_abbrev  0x000045b5      0x198 contiki-avr-atmega128rfa1.a(uip-split.o)
+ .debug_abbrev  0x0000474d      0x3b6 contiki-avr-atmega128rfa1.a(uip.o)
+ .debug_abbrev  0x00004b03      0x15a contiki-avr-atmega128rfa1.a(rtimer-arch.o)
+ .debug_abbrev  0x00004c5d      0x1d5 contiki-avr-atmega128rfa1.a(frame802154.o)
+ .debug_abbrev  0x00004e32      0x11c contiki-avr-atmega128rfa1.a(memb.o)
+ .debug_abbrev  0x00004f4e       0xfb contiki-avr-atmega128rfa1.a(timer.o)
 
-.debug_line     0x00000000     0x46b6
+.debug_line     0x00000000     0x46c6
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x1ae domotica.co
- .debug_line    0x000001ae      0x3d2 contiki-avr-atmega128rfa1.a(contiki-main.o)
- .debug_line    0x00000580      0x257 contiki-avr-atmega128rfa1.a(params.o)
- .debug_line    0x000007d7      0x1f5 contiki-avr-atmega128rfa1.a(clock.o)
- .debug_line    0x000009cc      0x1b5 contiki-avr-atmega128rfa1.a(rs232.o)
- .debug_line    0x00000b81      0x102 contiki-avr-atmega128rfa1.a(watchdog.o)
- .debug_line    0x00000c83      0x5fb contiki-avr-atmega128rfa1.a(rf230bb.o)
- .debug_line    0x0000127e      0x1d2 contiki-avr-atmega128rfa1.a(halbb.o)
- .debug_line    0x00001450      0x16f contiki-avr-atmega128rfa1.a(rimeaddr.o)
- .debug_line    0x000015bf      0x23a contiki-avr-atmega128rfa1.a(rime.o)
- .debug_line    0x000017f9      0x1c6 contiki-avr-atmega128rfa1.a(announcement.o)
- .debug_line    0x000019bf      0x2d4 contiki-avr-atmega128rfa1.a(broadcast-annou)
- .debug_line    0x00001c93      0x181 contiki-avr-atmega128rfa1.a(broadcast.o)
- .debug_line    0x00001e14      0x164 contiki-avr-atmega128rfa1.a(abc.o)
- .debug_line    0x00001f78      0x136 contiki-avr-atmega128rfa1.a(chameleon.o)
- .debug_line    0x000020ae      0x168 contiki-avr-atmega128rfa1.a(channel.o)
- .debug_line    0x00002216      0x21a contiki-avr-atmega128rfa1.a(chameleon-bitop)
- .debug_line    0x00002430       0xcf contiki-avr-atmega128rfa1.a(nullmac.o)
- .debug_line    0x000024ff      0x230 contiki-avr-atmega128rfa1.a(sicslowmac.o)
- .debug_line    0x0000272f      0x1e6 contiki-avr-atmega128rfa1.a(process.o)
- .debug_line    0x00002915       0x92 contiki-avr-atmega128rfa1.a(autostart.o)
- .debug_line    0x000029a7      0x15b contiki-avr-atmega128rfa1.a(list.o)
- .debug_line    0x00002b02      0x21a contiki-avr-atmega128rfa1.a(etimer.o)
- .debug_line    0x00002d1c      0x1b3 contiki-avr-atmega128rfa1.a(ctimer.o)
- .debug_line    0x00002ecf      0x135 contiki-avr-atmega128rfa1.a(energest.o)
- .debug_line    0x00003004       0x8e contiki-avr-atmega128rfa1.a(rtimer.o)
- .debug_line    0x00003092      0x113 contiki-avr-atmega128rfa1.a(print-stats.o)
- .debug_line    0x000031a5       0xc8 contiki-avr-atmega128rfa1.a(random.o)
- .debug_line    0x0000326d      0x2f8 contiki-avr-atmega128rfa1.a(packetbuf.o)
- .debug_line    0x00003565      0x1fd contiki-avr-atmega128rfa1.a(queuebuf.o)
- .debug_line    0x00003762      0x31c contiki-avr-atmega128rfa1.a(tcpip.o)
- .debug_line    0x00003a7e      0x106 contiki-avr-atmega128rfa1.a(uip-split.o)
- .debug_line    0x00003b84      0x5c8 contiki-avr-atmega128rfa1.a(uip.o)
- .debug_line    0x0000414c      0x1df contiki-avr-atmega128rfa1.a(rtimer-arch.o)
- .debug_line    0x0000432b      0x1f4 contiki-avr-atmega128rfa1.a(frame802154.o)
- .debug_line    0x0000451f       0xbb contiki-avr-atmega128rfa1.a(memb.o)
- .debug_line    0x000045da       0xdc contiki-avr-atmega128rfa1.a(timer.o)
+ .debug_line    0x00000000      0x1be domotica.co
+ .debug_line    0x000001be      0x3d2 contiki-avr-atmega128rfa1.a(contiki-main.o)
+ .debug_line    0x00000590      0x257 contiki-avr-atmega128rfa1.a(params.o)
+ .debug_line    0x000007e7      0x1f5 contiki-avr-atmega128rfa1.a(clock.o)
+ .debug_line    0x000009dc      0x1b5 contiki-avr-atmega128rfa1.a(rs232.o)
+ .debug_line    0x00000b91      0x102 contiki-avr-atmega128rfa1.a(watchdog.o)
+ .debug_line    0x00000c93      0x5fb contiki-avr-atmega128rfa1.a(rf230bb.o)
+ .debug_line    0x0000128e      0x1d2 contiki-avr-atmega128rfa1.a(halbb.o)
+ .debug_line    0x00001460      0x16f contiki-avr-atmega128rfa1.a(rimeaddr.o)
+ .debug_line    0x000015cf      0x23a contiki-avr-atmega128rfa1.a(rime.o)
+ .debug_line    0x00001809      0x1c6 contiki-avr-atmega128rfa1.a(announcement.o)
+ .debug_line    0x000019cf      0x2d4 contiki-avr-atmega128rfa1.a(broadcast-annou)
+ .debug_line    0x00001ca3      0x181 contiki-avr-atmega128rfa1.a(broadcast.o)
+ .debug_line    0x00001e24      0x164 contiki-avr-atmega128rfa1.a(abc.o)
+ .debug_line    0x00001f88      0x136 contiki-avr-atmega128rfa1.a(chameleon.o)
+ .debug_line    0x000020be      0x168 contiki-avr-atmega128rfa1.a(channel.o)
+ .debug_line    0x00002226      0x21a contiki-avr-atmega128rfa1.a(chameleon-bitop)
+ .debug_line    0x00002440       0xcf contiki-avr-atmega128rfa1.a(nullmac.o)
+ .debug_line    0x0000250f      0x230 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+ .debug_line    0x0000273f      0x1e6 contiki-avr-atmega128rfa1.a(process.o)
+ .debug_line    0x00002925       0x92 contiki-avr-atmega128rfa1.a(autostart.o)
+ .debug_line    0x000029b7      0x15b contiki-avr-atmega128rfa1.a(list.o)
+ .debug_line    0x00002b12      0x21a contiki-avr-atmega128rfa1.a(etimer.o)
+ .debug_line    0x00002d2c      0x1b3 contiki-avr-atmega128rfa1.a(ctimer.o)
+ .debug_line    0x00002edf      0x135 contiki-avr-atmega128rfa1.a(energest.o)
+ .debug_line    0x00003014       0x8e contiki-avr-atmega128rfa1.a(rtimer.o)
+ .debug_line    0x000030a2      0x113 contiki-avr-atmega128rfa1.a(print-stats.o)
+ .debug_line    0x000031b5       0xc8 contiki-avr-atmega128rfa1.a(random.o)
+ .debug_line    0x0000327d      0x2f8 contiki-avr-atmega128rfa1.a(packetbuf.o)
+ .debug_line    0x00003575      0x1fd contiki-avr-atmega128rfa1.a(queuebuf.o)
+ .debug_line    0x00003772      0x31c contiki-avr-atmega128rfa1.a(tcpip.o)
+ .debug_line    0x00003a8e      0x106 contiki-avr-atmega128rfa1.a(uip-split.o)
+ .debug_line    0x00003b94      0x5c8 contiki-avr-atmega128rfa1.a(uip.o)
+ .debug_line    0x0000415c      0x1df contiki-avr-atmega128rfa1.a(rtimer-arch.o)
+ .debug_line    0x0000433b      0x1f4 contiki-avr-atmega128rfa1.a(frame802154.o)
+ .debug_line    0x0000452f       0xbb contiki-avr-atmega128rfa1.a(memb.o)
+ .debug_line    0x000045ea       0xdc contiki-avr-atmega128rfa1.a(timer.o)
 
 .debug_frame    0x00000000     0x2058
  *(.debug_frame)
@@ -2230,81 +2263,81 @@ END GROUP
  .debug_frame   0x00001f64       0x60 contiki-avr-atmega128rfa1.a(memb.o)
  .debug_frame   0x00001fc4       0x94 contiki-avr-atmega128rfa1.a(timer.o)
 
-.debug_str      0x00000000     0x2e76
+.debug_str      0x00000000     0x2ef1
  *(.debug_str)
- .debug_str     0x00000000      0x317 domotica.co
-                                0x381 (size before relaxing)
- .debug_str     0x00000317      0x328 contiki-avr-atmega128rfa1.a(contiki-main.o)
+ .debug_str     0x00000000      0x32b domotica.co
+                                0x395 (size before relaxing)
+ .debug_str     0x0000032b      0x38f contiki-avr-atmega128rfa1.a(contiki-main.o)
                                 0x666 (size before relaxing)
- .debug_str     0x0000063f      0x17c contiki-avr-atmega128rfa1.a(params.o)
+ .debug_str     0x000006ba      0x17c contiki-avr-atmega128rfa1.a(params.o)
                                 0x457 (size before relaxing)
- .debug_str     0x000007bb      0x116 contiki-avr-atmega128rfa1.a(clock.o)
+ .debug_str     0x00000836      0x116 contiki-avr-atmega128rfa1.a(clock.o)
                                 0x284 (size before relaxing)
- .debug_str     0x000008d1       0xe5 contiki-avr-atmega128rfa1.a(rs232.o)
+ .debug_str     0x0000094c       0xe5 contiki-avr-atmega128rfa1.a(rs232.o)
                                 0x36e (size before relaxing)
- .debug_str     0x000009b6       0x3b contiki-avr-atmega128rfa1.a(watchdog.o)
+ .debug_str     0x00000a31       0x3b contiki-avr-atmega128rfa1.a(watchdog.o)
                                 0x18c (size before relaxing)
- .debug_str     0x000009f1      0x9a9 contiki-avr-atmega128rfa1.a(rf230bb.o)
+ .debug_str     0x00000a6c      0x9a9 contiki-avr-atmega128rfa1.a(rf230bb.o)
                                 0xe49 (size before relaxing)
- .debug_str     0x0000139a       0xec contiki-avr-atmega128rfa1.a(halbb.o)
+ .debug_str     0x00001415       0xec contiki-avr-atmega128rfa1.a(halbb.o)
                                 0x30f (size before relaxing)
- .debug_str     0x00001486       0x75 contiki-avr-atmega128rfa1.a(rimeaddr.o)
+ .debug_str     0x00001501       0x75 contiki-avr-atmega128rfa1.a(rimeaddr.o)
                                 0x1cb (size before relaxing)
- .debug_str     0x000014fb      0x1b6 contiki-avr-atmega128rfa1.a(rime.o)
+ .debug_str     0x00001576      0x1b6 contiki-avr-atmega128rfa1.a(rime.o)
                                 0x3d5 (size before relaxing)
- .debug_str     0x000016b1      0x1ab contiki-avr-atmega128rfa1.a(announcement.o)
+ .debug_str     0x0000172c      0x1ab contiki-avr-atmega128rfa1.a(announcement.o)
                                 0x388 (size before relaxing)
- .debug_str     0x0000185c      0x21d contiki-avr-atmega128rfa1.a(broadcast-annou)
+ .debug_str     0x000018d7      0x21d contiki-avr-atmega128rfa1.a(broadcast-annou)
                                 0x688 (size before relaxing)
- .debug_str     0x00001a79       0xa2 contiki-avr-atmega128rfa1.a(broadcast.o)
+ .debug_str     0x00001af4       0xa2 contiki-avr-atmega128rfa1.a(broadcast.o)
                                 0x6cf (size before relaxing)
- .debug_str     0x00001b1b       0x37 contiki-avr-atmega128rfa1.a(abc.o)
+ .debug_str     0x00001b96       0x37 contiki-avr-atmega128rfa1.a(abc.o)
                                 0x643 (size before relaxing)
- .debug_str     0x00001b52       0x63 contiki-avr-atmega128rfa1.a(chameleon.o)
+ .debug_str     0x00001bcd       0x63 contiki-avr-atmega128rfa1.a(chameleon.o)
                                 0x513 (size before relaxing)
- .debug_str     0x00001bb5       0x4e contiki-avr-atmega128rfa1.a(channel.o)
+ .debug_str     0x00001c30       0x4e contiki-avr-atmega128rfa1.a(channel.o)
                                 0x261 (size before relaxing)
- .debug_str     0x00001c03      0x105 contiki-avr-atmega128rfa1.a(chameleon-bitop)
+ .debug_str     0x00001c7e      0x105 contiki-avr-atmega128rfa1.a(chameleon-bitop)
                                 0x62b (size before relaxing)
- .debug_str     0x00001d08       0x46 contiki-avr-atmega128rfa1.a(nullmac.o)
+ .debug_str     0x00001d83       0x46 contiki-avr-atmega128rfa1.a(nullmac.o)
                                 0x22f (size before relaxing)
- .debug_str     0x00001d4e      0x1f8 contiki-avr-atmega128rfa1.a(sicslowmac.o)
+ .debug_str     0x00001dc9      0x1f8 contiki-avr-atmega128rfa1.a(sicslowmac.o)
                                 0x8d1 (size before relaxing)
- .debug_str     0x00001f46      0x134 contiki-avr-atmega128rfa1.a(process.o)
+ .debug_str     0x00001fc1      0x134 contiki-avr-atmega128rfa1.a(process.o)
                                 0x2fb (size before relaxing)
- .debug_str     0x0000207a       0x2c contiki-avr-atmega128rfa1.a(autostart.o)
+ .debug_str     0x000020f5       0x2c contiki-avr-atmega128rfa1.a(autostart.o)
                                 0x1d7 (size before relaxing)
- .debug_str     0x000020a6       0x72 contiki-avr-atmega128rfa1.a(list.o)
+ .debug_str     0x00002121       0x72 contiki-avr-atmega128rfa1.a(list.o)
                                 0x16f (size before relaxing)
- .debug_str     0x00002118      0x112 contiki-avr-atmega128rfa1.a(etimer.o)
+ .debug_str     0x00002193      0x112 contiki-avr-atmega128rfa1.a(etimer.o)
                                 0x368 (size before relaxing)
- .debug_str     0x0000222a       0x98 contiki-avr-atmega128rfa1.a(ctimer.o)
+ .debug_str     0x000022a5       0x98 contiki-avr-atmega128rfa1.a(ctimer.o)
                                 0x445 (size before relaxing)
- .debug_str     0x000022c2       0x9d contiki-avr-atmega128rfa1.a(energest.o)
+ .debug_str     0x0000233d       0x9d contiki-avr-atmega128rfa1.a(energest.o)
                                 0x361 (size before relaxing)
- .debug_str     0x0000235f       0xcf contiki-avr-atmega128rfa1.a(rtimer.o)
+ .debug_str     0x000023da       0xcf contiki-avr-atmega128rfa1.a(rtimer.o)
                                 0x34b (size before relaxing)
- .debug_str     0x0000242e       0x1f contiki-avr-atmega128rfa1.a(print-stats.o)
+ .debug_str     0x000024a9       0x1f contiki-avr-atmega128rfa1.a(print-stats.o)
                                 0x2e0 (size before relaxing)
- .debug_str     0x0000244d       0x25 contiki-avr-atmega128rfa1.a(random.o)
+ .debug_str     0x000024c8       0x25 contiki-avr-atmega128rfa1.a(random.o)
                                 0x166 (size before relaxing)
- .debug_str     0x00002472      0x15c contiki-avr-atmega128rfa1.a(packetbuf.o)
+ .debug_str     0x000024ed      0x15c contiki-avr-atmega128rfa1.a(packetbuf.o)
                                 0x7f2 (size before relaxing)
- .debug_str     0x000025ce      0x193 contiki-avr-atmega128rfa1.a(queuebuf.o)
+ .debug_str     0x00002649      0x193 contiki-avr-atmega128rfa1.a(queuebuf.o)
                                 0x86e (size before relaxing)
- .debug_str     0x00002761      0x312 contiki-avr-atmega128rfa1.a(tcpip.o)
+ .debug_str     0x000027dc      0x312 contiki-avr-atmega128rfa1.a(tcpip.o)
                                 0x6fe (size before relaxing)
- .debug_str     0x00002a73       0x69 contiki-avr-atmega128rfa1.a(uip-split.o)
+ .debug_str     0x00002aee       0x69 contiki-avr-atmega128rfa1.a(uip-split.o)
                                 0x29b (size before relaxing)
- .debug_str     0x00002adc      0x26a contiki-avr-atmega128rfa1.a(uip.o)
+ .debug_str     0x00002b57      0x26a contiki-avr-atmega128rfa1.a(uip.o)
                                 0x78a (size before relaxing)
- .debug_str     0x00002d46       0x56 contiki-avr-atmega128rfa1.a(rtimer-arch.o)
+ .debug_str     0x00002dc1       0x56 contiki-avr-atmega128rfa1.a(rtimer-arch.o)
                                 0x3db (size before relaxing)
- .debug_str     0x00002d9c       0x94 contiki-avr-atmega128rfa1.a(frame802154.o)
+ .debug_str     0x00002e17       0x94 contiki-avr-atmega128rfa1.a(frame802154.o)
                                 0x391 (size before relaxing)
- .debug_str     0x00002e30       0x1d contiki-avr-atmega128rfa1.a(memb.o)
+ .debug_str     0x00002eab       0x1d contiki-avr-atmega128rfa1.a(memb.o)
                                 0x191 (size before relaxing)
- .debug_str     0x00002e4d       0x29 contiki-avr-atmega128rfa1.a(timer.o)
+ .debug_str     0x00002ec8       0x29 contiki-avr-atmega128rfa1.a(timer.o)
                                 0x1b1 (size before relaxing)
 
 .debug_loc      0x00000000     0x8619
