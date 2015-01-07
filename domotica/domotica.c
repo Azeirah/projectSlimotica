@@ -13,31 +13,42 @@
 #include <avr/io.h>	//For pin defines
 #include <util/delay.h>	//For delay functions
 #include <stdio.h>
-void blinkingLeds(void);
+//void blinkingLeds(void);
 
-
-//Making a Contiki Protothread Process
+//Making a Contiki Process
 PROCESS(hello_world_process, "Hello world process");
 //Select a Process to start automatically after powering on
 AUTOSTART_PROCESSES(&hello_world_process);
 
-
-PROCESS_THREAD(hello_world_process, ev, data)
-{
+PROCESS_THREAD(hello_world_process, ev, data) {
+	DDRE |= (1 << DDE6);
 	PROCESS_BEGIN();
+	// int x;
+	// clock_init();
 	disableSPI();
+	while (1) {
+		PORTE |= (1 << DDE6);
+		clock_delay_usec(500000);
+		PORTE &= ~(1 << DDE6);
+		clock_delay_usec(500000);
+		printf("Got event number %d\n", ev);
+		PROCESS_PAUSE();
+	}
 	PROCESS_END();
 }
 
+/*
 void blinkingLeds(void) {
 	
 	int x;
 	
 	printf("Hello contiki world");
-	for(x = 0 ; x < 10000 ; x++) {
+	for(x = 0; x < 10000 ; x++) {
+		PROCESS_PAUSE();
 		PORTE |= (1 << DDE6);
-		_delay_ms(500);
+		clock_delay_usec(500000);
 		PORTE &= ~(1 << DDE6);
-		_delay_ms(500);
+		clock_delay_usec(500000);
 	}
 }
+*/
