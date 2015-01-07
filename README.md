@@ -14,6 +14,7 @@ cd projectSlimotica
 git submodule update --init --recursive
 ```
 
+```
     ----------
 46 |          | 1
    |          |
@@ -22,6 +23,7 @@ git submodule update --init --recursive
    |  |    |  |
 24 |   ----   | 23
     ----------
+```
 
 RS232 debugging zit op pinnen ZWART op GROUND, WIT (oranje in de RS232 kabel) op 26, en GEEL (geel in de RS232 kabel) op 28
 
