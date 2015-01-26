@@ -32,16 +32,7 @@
  * SPDR = SPI Data register
  */
 
-#include <stdint.h> //Include for uint8_t
-
-//Defines for ease of use of parameters of Function: initSPI();
-#define EDGE_REACT				char edgeReact
-#define SPI_MODE				char spiMasterEnable
-#define SIGNIFICANT_BIT_FIRST	char dataOrder
-#define SPI_ENABLE				char spiEnable
-#define SPI_INTERRUPT_ENABLE	char spiInterruptEnable
-
-#define BUFFER_SIZE 128
+#define BUFFER_SIZE 200 //DataBuffer of the SPI bridge is limited to 200 bytes
 
 //SPI Pin configurations: Conform deRFmega128 Pin Configuration
 #define SPI_MOSI_PIN	PORTB2
@@ -60,13 +51,14 @@
 #define MSB_FIRST		0
 
 //Functions
-char initSPI(char clockRate, EDGE_REACT, SPI_MODE, SIGNIFICANT_BIT_FIRST, SPI_ENABLE, SPI_INTERRUPT_ENABLE);
-void disableSPI(void); //Disable SPI
+char initSPI(void);
+//char receiveSPI(void);
 
-uint8_t getRecievedDataSPI(void); //Return contents of SPDR
-void setDataToSendSPI(uint8_t dataOut); //Set contents of SPDR with dataOut
+void disableSPI(void); //Disable SPI
 
 void nextData(void); //Set next data databuffer > spiDATA || databuffer < spiDATA
 
+char bufferRQReady(void);
+
 void setDataBuffer(char data[]); //Set the databuffer to send via SPI
-char getDataBufferAtIndex(char a); //Get Character from databuffer at index a
+

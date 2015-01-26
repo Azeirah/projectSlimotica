@@ -126,6 +126,15 @@
     <Compile Include="SPI.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="SPIT.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPIT.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="spitest.c">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="contiki-avr-atmega128rfa1.a">
