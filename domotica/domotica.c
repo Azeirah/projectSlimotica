@@ -9,6 +9,7 @@
 #include "contiki.h"	//Contiki
 //#include "I2C.h"
 #include "source/SPI.h"
+#include "source/tcp_ip.h"
 
 #include <avr/io.h>	//For pin defines
 #include <util/delay.h>	//For delay functions
