@@ -7,7 +7,7 @@
 
 //#define F_CPU 1000000UL	//For delay Function
 #include "contiki.h"	//Contiki
-#include "SPI.h"
+//#include "SPI.h"
 
 #include <avr/io.h>	//For pin defines
 #include <util/delay.h>	//For delay functions
@@ -30,18 +30,11 @@ PROCESS_THREAD(hello_world_process, ev, data) {
 	DDRE |= (1 << DDE6);
 	PROCESS_BEGIN();
 	clock_init();
-	initSPI();
 	//printf("SPCR: %x \n", SPCR);
 	//printf("SPSR: %x \n", SPSR);
 	//disableSPI();
 	while (1) {
 		PROCESS_PAUSE();
 	}
-	PROCESS_END();
-}
-
-PROCESS_THREAD(print_info_spi_process, ev, data) {
-	PROCESS_BEGIN();
-	printf("DataString: %s \n", dataBuffer);
 	PROCESS_END();
 }

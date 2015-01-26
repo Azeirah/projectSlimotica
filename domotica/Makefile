@@ -5,7 +5,7 @@ all: $(CONTIKI_PROJECT)
 CFLAGS=-std=c99
 
 LDFLAGS += -L/source
-TARGET_LIBFILES += "SPI.c"
+TARGET_LIBFILES += "I2C.c"
 
 CONTIKI = contiki
 include $(CONTIKI)/Makefile.include
