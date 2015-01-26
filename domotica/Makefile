@@ -5,6 +5,11 @@ all: $(CONTIKI_PROJECT)
 
 # Use C99 instead of default C.
 CFLAGS=-std=c99
+CFLAGS+= -DUIP_CONF_IPV6_RPL
+
+UIP_CONF_IPV6 = 1
+UIP_CONF_RPL = 1
+CONTIKI_WITH_IPV6 = 1
 
 LDFLAGS += -L/source
 TARGET_LIBFILES += "source/SPI.c"
