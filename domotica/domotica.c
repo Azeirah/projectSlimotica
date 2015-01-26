@@ -13,13 +13,8 @@
 #include <util/delay.h>	//For delay functions
 #include <stdio.h>
 
-extern char dataBuffer[BUFFER_SIZE];
-extern char dataBufferCounter;
-extern char dataBufferLimit;
-
 //Making a Contiki Process
 PROCESS(hello_world_process, "Hello world process");
-PROCESS(print_info_spi_process, "Print SPI info prosess");
 //Select a Process to start automatically after powering on
 AUTOSTART_PROCESSES(&hello_world_process);
 

@@ -120,10 +120,7 @@
     <Compile Include="domotica.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="SPI.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SPI.h">
+    <Compile Include="I2C.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="SPIT.c">
