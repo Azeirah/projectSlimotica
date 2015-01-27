@@ -1,5 +1,5 @@
 # compiled files
-obj_avr-atmega128rfa1
+obj_avr-atmega128rfa1/
 contiki-avr-atmega128rfa1.a
 contiki-avr-atmega128rfa1.map
 domotica.avr-atmega128rfa1
