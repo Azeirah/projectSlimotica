@@ -11,6 +11,9 @@
 
 
 void initTWI(void);
+void printData(void);
+char checkTransferComplete(void);
+char checkMode(void);
 
 
 #endif /* I2C_H_ */

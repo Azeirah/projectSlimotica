@@ -1,13 +1,15 @@
 CONTIKI_PROJECT = domotica
 PROJECTDIRS = source
-PROJECTSOURCEFILES = SPI.c spi-udp-linker.c tcp_ip.c device-registration.c jsmn.c json-rpc.c server_calls.c util.c
+PROJECT_SOURCEFILES = I2C.c
 all: $(CONTIKI_PROJECT)
+
+TARGET=avr-atmega128rfa1
 
 # Use C99 instead of default C.
 CFLAGS=-std=c99
 
 LDFLAGS += -L/source
-TARGET_LIBFILES += "I2C.c"
+#TARGET_LIBFILES += "I2C.c"
 
 CONTIKI = contiki
 include $(CONTIKI)/Makefile.include

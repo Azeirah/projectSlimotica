@@ -10,6 +10,7 @@
 #include <avr/io.h>	//For pin defines
 #include <util/delay.h>	//For delay functions
 #include <stdio.h>
+#include "I2C.h"
 
 //Making a Contiki Process
 PROCESS(hello_world_process, "Hello world process");
@@ -18,10 +19,14 @@ AUTOSTART_PROCESSES(&hello_world_process);
 
 
 PROCESS_THREAD(hello_world_process, ev, data) {
-	DDRE |= (1 << DDE6);
 	PROCESS_BEGIN();
 	clock_init();
+	initTWI();
+	printf("I2C Control: %x \n", TWCR);
 	while (1) {
+		if (checkMode() && checkTransferComplete()) {
+			printData();
+		}
 		PROCESS_PAUSE();
 	}
 	PROCESS_END();
