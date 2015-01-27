@@ -15,7 +15,7 @@ char transferComplete;
 int bufferCounter;
 int dataSize;
 
-void initTWI(){
+void initTWI(void){
 	sei();
 	PRR0 &= ~(1 << PRTWI);
 	TWAR = 0xAA; //Set slave address;

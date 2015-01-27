@@ -112,7 +112,7 @@
     <UsesExternalMakeFile>True</UsesExternalMakeFile>
     <OutputDirectory>
     </OutputDirectory>
-    <BuildTarget> TARGET=avr-atmega128rfa1</BuildTarget>
+    <BuildTarget>TARGET=avr-atmega128rfa1</BuildTarget>
     <CleanTarget>clean</CleanTarget>
     <ExternalMakeFilePath>Makefile</ExternalMakeFilePath>
   </PropertyGroup>
@@ -123,21 +123,12 @@
     <Compile Include="I2C.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="SPIT.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SPIT.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="spitest.c">
+    <Compile Include="I2C.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="contiki-avr-atmega128rfa1.a">
-      <SubType>compile</SubType>
-    </None>
-    <None Include="contiki-avr-atmega128rfa1.map">
       <SubType>compile</SubType>
     </None>
     <None Include="domotica.avr-atmega128rfa1">
