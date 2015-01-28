@@ -23,10 +23,12 @@ PROCESS_THREAD(hello_world_process, ev, data) {
 	clock_init();
 	initTWI();
 	printf("I2C Control: %x \n", TWCR);
+	fillBuffer();
 	while (1) {
-		if (checkMode() && checkTransferComplete()) {
+		if (checkTransferComplete()) {
 			printData();
 		}
+		//printf("I2C Control: %x \n", TWCR);
 		PROCESS_PAUSE();
 	}
 	PROCESS_END();

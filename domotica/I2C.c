@@ -55,18 +55,30 @@ void printData(void) {
 	}
 }
 
+void fillBuffer(void) {
+	int i = 0;
+	dataSize = 5;
+	for (i = 0 ; i <30 ; i++) {
+		dataBufferOut[i] = 0x80 - i;
+	}
+}
+
 ISR(TWI_vect) {
 	switch(TW_STATUS) {
 		case TW_ST_SLA_ACK:
-			transferComplete = 0;
+			//transferComplete = 0;
 			receive = 0;
+			bufferCounter = 0;
 			TWDR = dataBufferOut[bufferCounter];
+			bufferCounter++;
 			TWCR |= (1<<TWINT)|(1<<TWEA);
 			break;
 		case TW_ST_ARB_LOST_SLA_ACK:
 			receive = 0;
-			transferComplete = 0;
+			//transferComplete = 0;
+			bufferCounter = 0;
 			TWDR = dataBufferOut[bufferCounter];
+			bufferCounter++;
 			TWCR |= (1<<TWINT)|(1<<TWEA);
 			break;
 		case TW_ST_DATA_ACK:
@@ -80,25 +92,28 @@ ISR(TWI_vect) {
 			} else {
 				TWDR = dataBufferOut[bufferCounter];
 				TWCR |= (1<<TWINT);
-				TWCR &= ~(0<<TWEA);
+				TWCR &= ~(1<<TWEA);
 			}
 			break;
 		case TW_ST_DATA_NACK:
 			TWCR |= (1<<TWINT)|(1<<TWEA);
-			transferComplete = 1;
+			//transferComplete = 1;
+			dataSize = 5;
 			bufferCounter = 0;
 			break;
 		case TW_ST_LAST_DATA:
 			TWCR |= (1<<TWINT)|(1<<TWEA);
-			transferComplete = 1;
+			//transferComplete = 1;
 			bufferCounter = 0;
 			break;
 		case TW_SR_SLA_ACK:
 			receive = 1;
+			bufferCounter = 0;
 			transferComplete = 0;
 			TWCR |= (1<<TWINT)|(1<<TWEA);
 			break;
 		case TW_SR_ARB_LOST_SLA_ACK:
+			bufferCounter = 0;
 			receive = 1;
 			transferComplete = 0;
 			TWCR |= (1<<TWINT)|(1<<TWEA);
@@ -106,8 +121,8 @@ ISR(TWI_vect) {
 		case TW_SR_DATA_ACK:
 			if (bufferCounter < 198) {
 				dataBufferIn[bufferCounter] = TWDR;
-				TWCR |= (1<<TWINT)|(1<<TWEA);
 				bufferCounter++;
+				TWCR |= (1<<TWINT)|(1<<TWEA);
 			} else {
 				dataBufferIn[bufferCounter] = TWDR;
 				bufferCounter++;
